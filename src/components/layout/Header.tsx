@@ -114,7 +114,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={(item as { label: string; href: string }).href}
-                  className="text-xs uppercase tracking-[0.15em] font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
+                  className="text-xs uppercase tracking-[0.15em] font-medium text-foreground/80 hover:text-foreground transition-colors duration-300"
                 >
                   {item.label}
                 </Link>

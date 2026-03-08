@@ -125,7 +125,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={toggleLang}
-              className="flex items-center gap-1 text-xs uppercase tracking-[0.15em] font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-1 text-xs uppercase tracking-[0.15em] font-medium text-foreground/80 hover:text-foreground transition-colors"
               aria-label="Toggle language"
             >
               <Globe className="w-3.5 h-3.5" />

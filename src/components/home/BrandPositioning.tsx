@@ -1,25 +1,25 @@
 import Section from "@/components/layout/Section";
 import { Dumbbell, Heart, Coffee, Users } from "lucide-react";
-
-const pillars = [
-  { icon: Dumbbell, label: "Train", desc: "Expert-led sessions in strength, HIIT, Pilates, and HYROX." },
-  { icon: Heart, label: "Recover", desc: "Sauna, infrared, physiotherapy, and restorative movement." },
-  { icon: Coffee, label: "Refuel", desc: "Smoothies, coffee, and nourishing meals at our healthy bar." },
-  { icon: Users, label: "Connect", desc: "A community built around shared ambition and daily ritual." },
-];
+import { useTranslation } from "react-i18next";
 
 const BrandPositioning = () => {
+  const { t } = useTranslation();
+
+  const pillars = [
+    { icon: Dumbbell, label: t("brand.train"), desc: t("brand.trainDesc") },
+    { icon: Heart, label: t("brand.recover"), desc: t("brand.recoverDesc") },
+    { icon: Coffee, label: t("brand.refuel"), desc: t("brand.refuelDesc") },
+    { icon: Users, label: t("brand.connect"), desc: t("brand.connectDesc") },
+  ];
+
   return (
     <Section>
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="pill-tag mb-6 inline-block">The Pomona Way</span>
-        <h2 className="text-editorial-lg text-foreground">
-          More than a gym.<br />A daily ritual.
+        <span className="pill-tag mb-6 inline-block">{t("brand.tag")}</span>
+        <h2 className="text-editorial-lg text-foreground whitespace-pre-line">
+          {t("brand.headline")}
         </h2>
-        <p className="text-body-lg mt-6">
-          Pomona Club blends training, recovery, and nourishing food into one elevated experience. 
-          Move harder, recover better, and stay longer in a space designed for performance and connection.
-        </p>
+        <p className="text-body-lg mt-6">{t("brand.body")}</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">

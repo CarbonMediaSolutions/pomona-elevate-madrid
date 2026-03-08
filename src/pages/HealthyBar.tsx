@@ -3,6 +3,7 @@ import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import barImg from "@/assets/healthy-bar.jpg";
+import { useTranslation } from "react-i18next";
 
 const menuCategories = [
   {
@@ -35,28 +36,24 @@ const menuCategories = [
 ];
 
 const HealthyBar = () => {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <section className="pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">Healthy Bar</span>
-          <h1 className="text-editorial-xl text-foreground">
-            Refuel without<br />leaving the club.
-          </h1>
-          <p className="text-body-lg mt-6">
-            From cold-pressed juices to specialty coffee, protein bowls to functional elixirs — our bar is where post-workout recovery meets the social energy of a premium café.
-          </p>
+          <span className="pill-tag mb-6 inline-block">{t("healthyBarSection.tag")}</span>
+          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("healthyBarPage.headline")}</h1>
+          <p className="text-body-lg mt-6">{t("healthyBarPage.body")}</p>
         </div>
       </section>
 
-      {/* Hero image */}
       <div className="section-container mb-16">
         <div className="relative rounded-lg overflow-hidden aspect-[21/9]">
           <img src={barImg} alt="Pomona Club healthy bar" className="w-full h-full object-cover" loading="lazy" />
         </div>
       </div>
 
-      {/* Menu */}
       {menuCategories.map((cat) => (
         <Section key={cat.name}>
           <h2 className="text-editorial-md text-foreground mb-8">{cat.name}</h2>
@@ -74,15 +71,12 @@ const HealthyBar = () => {
         </Section>
       ))}
 
-      {/* CTA */}
       <Section className="bg-secondary/30">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-editorial-md text-foreground">Open to members and visitors.</h2>
-          <p className="text-body-lg mt-4">
-            The Pomona Bar welcomes everyone. Members enjoy exclusive pricing and perks. Drop in, stay longer, refuel beautifully.
-          </p>
+          <h2 className="text-editorial-md text-foreground">{t("healthyBarPage.ctaHeadline")}</h2>
+          <p className="text-body-lg mt-4">{t("healthyBarPage.ctaBody")}</p>
           <Link to="/contact" className="mt-8 inline-block">
-            <Button variant="hero" size="lg">Plan Your Visit</Button>
+            <Button variant="hero" size="lg">{t("healthyBarPage.planVisit")}</Button>
           </Link>
         </div>
       </Section>

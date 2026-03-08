@@ -1,6 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Star, Quote } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
@@ -25,26 +26,24 @@ const testimonials = [
   },
 ];
 
-const stats = [
-  { value: "2,500+", label: "Active members" },
-  { value: "40+", label: "Weekly classes" },
-  { value: "12", label: "Expert coaches" },
-  { value: "4.9", label: "Average rating" },
-];
-
 const SocialProof = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState(0);
+
+  const stats = [
+    { value: "2,500+", label: t("social.activeMembers") },
+    { value: "40+", label: t("social.weeklyClasses") },
+    { value: "12", label: t("social.expertCoaches") },
+    { value: "4.9", label: t("social.averageRating") },
+  ];
 
   return (
     <Section className="bg-secondary/30">
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="pill-tag mb-6 inline-block">Member Voices</span>
-        <h2 className="text-editorial-lg text-foreground">
-          Loved by Madrid professionals,<br />athletes, and wellness-first locals.
-        </h2>
+        <span className="pill-tag mb-6 inline-block">{t("social.tag")}</span>
+        <h2 className="text-editorial-lg text-foreground whitespace-pre-line">{t("social.headline")}</h2>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
@@ -54,7 +53,6 @@ const SocialProof = () => {
         ))}
       </div>
 
-      {/* Testimonials */}
       <div className="max-w-3xl mx-auto">
         <div className="card-premium p-8 lg:p-12 text-center">
           <Quote className="w-8 h-8 text-primary/30 mx-auto mb-6" />
@@ -71,17 +69,9 @@ const SocialProof = () => {
             ))}
           </div>
         </div>
-
         <div className="flex justify-center gap-2 mt-6">
           {testimonials.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === active ? "bg-primary w-6" : "bg-border"
-              }`}
-              aria-label={`Testimonial ${i + 1}`}
-            />
+            <button key={i} onClick={() => setActive(i)} className={`w-2 h-2 rounded-full transition-all duration-300 ${i === active ? "bg-primary w-6" : "bg-border"}`} aria-label={`Testimonial ${i + 1}`} />
           ))}
         </div>
       </div>

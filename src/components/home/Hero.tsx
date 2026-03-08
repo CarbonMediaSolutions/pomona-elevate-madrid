@@ -1,19 +1,26 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-gym.jpg";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  const tags = t("hero.tags", { returnObjects: true }) as string[];
+
   return (
     <section className="relative h-screen min-h-[700px] flex items-end overflow-hidden">
-      {/* Background */}
+      {/* Video Background */}
       <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt="Pomona Club premium boutique gym interior in Madrid"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
-          loading="eager"
-        />
+          poster=""
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
         <div className="image-overlay" />
       </div>
 
@@ -25,35 +32,34 @@ const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="max-w-3xl"
         >
-          <h1 className="text-editorial-xl text-foreground">
-            Where performance<br />meets lifestyle.
+          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">
+            {t("hero.headline")}
           </h1>
 
           <p className="text-body-lg mt-6 max-w-xl text-foreground/70">
-            Boutique training, recovery, nutrition, and healthy social energy in the heart of Madrid.
+            {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
             <Link to="/schedule">
               <Button variant="hero" size="xl">
-                Book Your First Session
+                {t("hero.cta1")}
               </Button>
             </Link>
             <Link to="/memberships">
               <Button variant="hero-outline" size="xl">
-                Explore Memberships
+                {t("hero.cta2")}
               </Button>
             </Link>
           </div>
 
           <div className="flex flex-wrap gap-x-6 gap-y-2 mt-10 text-xs uppercase tracking-[0.15em] text-foreground/40 font-medium">
-            <span>Boutique Training</span>
-            <span className="text-primary">·</span>
-            <span>Recovery</span>
-            <span className="text-primary">·</span>
-            <span>Healthy Bar</span>
-            <span className="text-primary">·</span>
-            <span>Expert-Led Coaching</span>
+            {tags.map((tag, i) => (
+              <span key={i}>
+                {i > 0 && <span className="text-primary mr-6">·</span>}
+                {tag}
+              </span>
+            ))}
           </div>
         </motion.div>
       </div>

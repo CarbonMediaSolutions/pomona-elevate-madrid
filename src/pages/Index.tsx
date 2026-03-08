@@ -1,13 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Layout from "@/components/layout/Layout";
+import Hero from "@/components/home/Hero";
+import BrandPositioning from "@/components/home/BrandPositioning";
+import ExperiencePillars from "@/components/home/ExperiencePillars";
+import SignatureExperiences from "@/components/home/SignatureExperiences";
+import SocialProof from "@/components/home/SocialProof";
+import MembershipTeaser from "@/components/home/MembershipTeaser";
+import HealthyBarPreview from "@/components/home/HealthyBarPreview";
+import TrainersPreview from "@/components/home/TrainersPreview";
+import LocationSection from "@/components/home/LocationSection";
+import FinalCTA from "@/components/home/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <Hero />
+      <BrandPositioning />
+      <ExperiencePillars />
+      <SignatureExperiences />
+      <SocialProof />
+      <MembershipTeaser />
+      <HealthyBarPreview />
+      <TrainersPreview />
+      <LocationSection />
+      <FinalCTA />
+    </Layout>
   );
 };
 

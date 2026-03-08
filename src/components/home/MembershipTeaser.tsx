@@ -1,0 +1,117 @@
+import Section from "@/components/layout/Section";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+
+const plans = [
+  {
+    name: "Club Essentials",
+    price: "89",
+    ideal: "For those starting their Pomona journey",
+    features: [
+      "8 classes per month",
+      "Open gym access",
+      "Healthy bar member pricing",
+      "1 recovery session / month",
+      "App booking & scheduling",
+    ],
+    cta: "Start with Essentials",
+    featured: false,
+  },
+  {
+    name: "Club Plus",
+    price: "139",
+    ideal: "For committed performers who want it all",
+    features: [
+      "Unlimited classes",
+      "Full open gym access",
+      "Recovery suite access",
+      "Priority booking",
+      "2 physio sessions / month",
+      "Guest passes (2/month)",
+      "Healthy bar perks",
+    ],
+    cta: "Join Club Plus",
+    featured: true,
+  },
+  {
+    name: "Signature",
+    price: "199",
+    ideal: "The full Pomona immersion",
+    features: [
+      "Everything in Club Plus",
+      "Unlimited recovery & sauna",
+      "Monthly nutrition consult",
+      "Personal training session",
+      "Priority event access",
+      "Exclusive member events",
+      "Laundry service",
+    ],
+    cta: "Go Signature",
+    featured: false,
+  },
+];
+
+const MembershipTeaser = () => {
+  return (
+    <Section>
+      <div className="text-center max-w-2xl mx-auto mb-16">
+        <span className="pill-tag mb-6 inline-block">Memberships</span>
+        <h2 className="text-editorial-lg text-foreground">
+          Choose the rhythm that fits your life.
+        </h2>
+        <p className="text-body-lg mt-4">
+          From flexible training access to full club immersion — every membership includes the Pomona experience.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {plans.map((plan) => (
+          <div
+            key={plan.name}
+            className={`card-premium p-8 flex flex-col ${
+              plan.featured ? "border-primary/40 ring-1 ring-primary/20" : ""
+            }`}
+          >
+            {plan.featured && (
+              <span className="pill-tag text-[10px] self-start mb-4 border-primary/30 text-primary">
+                Most Popular
+              </span>
+            )}
+            <h3 className="font-serif text-2xl text-foreground">{plan.name}</h3>
+            <p className="text-sm text-muted-foreground mt-1">{plan.ideal}</p>
+            <div className="mt-6 mb-6">
+              <span className="text-4xl font-serif font-semibold text-foreground">€{plan.price}</span>
+              <span className="text-sm text-muted-foreground">/month</span>
+            </div>
+            <ul className="flex flex-col gap-3 flex-1">
+              {plan.features.map((f) => (
+                <li key={f} className="flex items-start gap-3 text-sm text-secondary-foreground">
+                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <Link to="/memberships" className="mt-8">
+              <Button
+                variant={plan.featured ? "hero" : "hero-outline"}
+                size="lg"
+                className="w-full"
+              >
+                {plan.cta}
+              </Button>
+            </Link>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center mt-8">
+        <Link to="/schedule" className="text-sm text-primary hover:underline underline-offset-4">
+          Not sure yet? Book a free trial session →
+        </Link>
+      </div>
+    </Section>
+  );
+};
+
+export default MembershipTeaser;

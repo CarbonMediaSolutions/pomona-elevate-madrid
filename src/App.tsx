@@ -17,6 +17,7 @@ const About = lazy(() => import("./pages/About"));
 const Trainers = lazy(() => import("./pages/Trainers"));
 const Schedule = lazy(() => import("./pages/Schedule"));
 const Journal = lazy(() => import("./pages/Journal"));
+const JournalArticle = lazy(() => import("./pages/JournalArticle"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 const queryClient = new QueryClient();

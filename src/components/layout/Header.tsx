@@ -83,7 +83,7 @@ const Header = () => {
                 <div key={item.label} className="relative">
                   <button
                     onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                    className="flex items-center gap-1 text-xs uppercase tracking-[0.15em] font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
+                    className="flex items-center gap-1 text-xs uppercase tracking-[0.15em] font-medium text-foreground/80 hover:text-foreground transition-colors duration-300"
                   >
                     {item.label}
                     <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openDropdown === item.label ? "rotate-180" : ""}`} />

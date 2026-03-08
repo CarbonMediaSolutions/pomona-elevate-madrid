@@ -17,6 +17,7 @@ const About = lazy(() => import("./pages/About"));
 const Trainers = lazy(() => import("./pages/Trainers"));
 const Schedule = lazy(() => import("./pages/Schedule"));
 const Journal = lazy(() => import("./pages/Journal"));
+const JournalArticle = lazy(() => import("./pages/JournalArticle"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 const queryClient = new QueryClient();
@@ -45,6 +46,7 @@ const App = () => (
             <Route path="/trainers" element={<Trainers />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/journal" element={<Journal />} />
+            <Route path="/journal/:slug" element={<JournalArticle />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

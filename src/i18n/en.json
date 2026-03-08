@@ -287,5 +287,176 @@
   "lang": {
     "en": "EN",
     "es": "ES"
+  },
+  "articles": {
+    "cta_text": "Ready to experience Pomona Club for yourself?",
+    "balanced_training_week": {
+      "title": "How to Build a Balanced Training Week",
+      "category": "Training",
+      "readTime": "5 min read",
+      "intro": "Most people approach their training week the same way every time — high intensity, every session, until burnout forces a break. But the best results come from intelligent programming that balances stress and recovery across a full week. Here's how to structure a training week that actually delivers long-term progress.",
+      "sections": [
+        {
+          "heading": "The myth of more is better",
+          "body": "There's a persistent belief in fitness culture that progress is directly proportional to effort. Train harder, train longer, train more often. But exercise science tells a different story. Adaptation happens during recovery, not during the workout itself. Every session creates a stress signal — your body only gets stronger when it has time and resources to respond to that signal. Without adequate recovery, you're simply accumulating fatigue without the corresponding adaptation. This is why so many dedicated gym-goers plateau despite training five or six days a week."
+        },
+        {
+          "heading": "The three energy systems",
+          "body": "A well-rounded week should address your three primary energy systems: the phosphagen system for explosive power (strength training, sprints), the glycolytic system for sustained high-intensity efforts (HIIT, HYROX-style circuits), and the aerobic system for endurance and recovery capacity (steady-state cardio, zone 2 work). At Pomona Club, our class programming is designed to hit all three systems across the week so you don't have to overthink it."
+        },
+        {
+          "heading": "A sample Pomona week",
+          "body": "Monday: Strength & conditioning — heavy compound movements, focused on progressive overload. Tuesday: HIIT Performance — high-intensity intervals that challenge your anaerobic capacity. Wednesday: Pilates or mobility session — active recovery that improves range of motion and reduces injury risk. Thursday: HYROX training — sport-specific endurance combining running with functional stations. Friday: Open gym — train what you enjoy or address weak points with a coach. Saturday: Running Club — social aerobic session building your base. Sunday: Recovery Suite — sauna, stretching, and letting your body do its work."
+        },
+        {
+          "heading": "Periodisation for real life",
+          "body": "Not every week needs to be identical. Periodisation — cycling between higher and lower intensity weeks — prevents plateaus and reduces burnout risk. Every four to six weeks, consider a deload: reduce volume or intensity by 30-40% and focus on technique, mobility, and recovery. Your body will thank you with a burst of progress in the following weeks. At Pomona, our coaches can help you plan these cycles so training feels sustainable, not punishing."
+        },
+        {
+          "heading": "The role of nutrition and sleep",
+          "body": "Training is only one piece of the puzzle. Without adequate nutrition — particularly protein intake and overall caloric sufficiency — your body lacks the raw materials for adaptation. And sleep is where the magic truly happens: growth hormone release, tissue repair, nervous system restoration. A perfectly designed training week built on poor nutrition and insufficient sleep will underperform every time. Visit our Healthy Bar after sessions for meals designed to support exactly this process."
+        }
+      ]
+    },
+    "recovery_is_performance": {
+      "title": "Why Recovery Is Part of Performance",
+      "category": "Recovery",
+      "readTime": "4 min read",
+      "intro": "Recovery isn't what you do when you're too tired to train. It's the other half of the performance equation — the half most people ignore. At Pomona Club, we've built an entire Recovery Suite because we believe that how you recover determines how you perform.",
+      "sections": [
+        {
+          "heading": "Understanding the stress-recovery cycle",
+          "body": "Every training session is a controlled dose of stress. Your muscles tear microscopically, your nervous system fatigues, your energy stores deplete. This is by design — it's the stimulus your body needs to adapt. But adaptation only occurs during recovery. Without it, stress simply accumulates. This is why overtraining syndrome exists: not from too much training, but from too little recovery relative to the training load. The goal isn't to avoid stress — it's to balance it with restoration."
+        },
+        {
+          "heading": "Active vs passive recovery",
+          "body": "Recovery isn't just lying on the sofa, though rest certainly has its place. Active recovery — light movement, mobility work, gentle stretching — increases blood flow to damaged tissues without adding meaningful stress. At Pomona, our Pilates and mobility sessions serve this purpose beautifully. They maintain movement quality while giving your high-intensity systems a break. Passive recovery includes sleep, sauna sessions, and simply allowing time between intense efforts."
+        },
+        {
+          "heading": "The science of heat therapy",
+          "body": "Our infrared sauna and traditional sauna aren't luxury add-ons — they're evidence-based recovery tools. Regular sauna use has been shown to improve cardiovascular health, increase heat shock protein production (which aids muscle repair), reduce inflammation, and improve sleep quality. A 15-20 minute sauna session after training can meaningfully accelerate your recovery timeline. Research from the University of Eastern Finland found that regular sauna use was associated with reduced risk of cardiovascular events and all-cause mortality."
+        },
+        {
+          "heading": "Physiotherapy as prevention",
+          "body": "Most people only see a physiotherapist when something hurts. But the most effective use of physiotherapy is preventive: identifying movement compensations, addressing minor imbalances before they become injuries, and maintaining tissue quality through manual therapy. Our in-house physiotherapy team works with members proactively, not just reactively. Regular bodywork sessions keep your movement patterns clean and your injury risk low."
+        },
+        {
+          "heading": "Building recovery into your identity",
+          "body": "The hardest part of recovery for driven people is the mindset shift. Recovery feels unproductive. It feels like you're not doing enough. But the highest-performing athletes in the world prioritise recovery as aggressively as they prioritise training. At Pomona Club, we've designed the Recovery Suite to feel like a reward, not a compromise. Sauna, cold exposure, manual therapy, and a post-session smoothie from the Healthy Bar — this is what a complete training culture looks like."
+        }
+      ]
+    },
+    "pre_post_workout_nutrition": {
+      "title": "The Best Pre- and Post-Workout Nutrition Habits",
+      "category": "Nutrition",
+      "readTime": "6 min read",
+      "intro": "What you eat around your training sessions has a disproportionate impact on your results. Not because of some magical metabolic window, but because consistent fuelling habits compound over time into dramatically different outcomes. Here's what the evidence actually says — no gimmicks, no supplements, just real food strategy.",
+      "sections": [
+        {
+          "heading": "Pre-workout: fuel the session",
+          "body": "The goal of pre-workout nutrition is simple: arrive at your session with enough energy to perform well, without feeling heavy or sluggish. For most people, a balanced meal 2-3 hours before training works best — something combining complex carbohydrates for sustained energy, moderate protein, and low-to-moderate fat. Think: oatmeal with berries and nuts, a rice bowl with grilled chicken, or a whole grain wrap with avocado and eggs. If you're training early morning, a lighter option 45-60 minutes before — like a banana with a spoonful of nut butter or a small smoothie — can bridge the gap without overwhelming your digestion."
+        },
+        {
+          "heading": "The post-workout window: real vs hype",
+          "body": "The idea of a strict 30-minute anabolic window has been largely debunked by modern research. Your body doesn't shut down protein synthesis the moment you leave the gym. However, eating within 1-2 hours after training is still good practice — not because of some magic window, but because you're likely hungry, your muscles are primed for nutrient uptake, and delaying nutrition for hours simply isn't optimal. A meal combining 20-40g of protein with carbohydrates to replenish glycogen is ideal."
+        },
+        {
+          "heading": "Protein: the non-negotiable",
+          "body": "If there's one nutritional habit that has the most evidence behind it for active people, it's adequate protein intake. Current research suggests 1.6-2.2g per kilogram of body weight daily for those training regularly. This supports muscle protein synthesis, recovery, and even satiety. Rather than obsessing over protein timing, focus on distribution: aim for 3-5 protein-rich meals spread throughout the day. Each meal should contain at least 20-30g of high-quality protein. Our Healthy Bar menu is designed with this in mind — every meal and smoothie option provides meaningful protein."
+        },
+        {
+          "heading": "Hydration: the overlooked factor",
+          "body": "Even mild dehydration — as little as 2% body weight loss through sweat — can impair performance, reduce strength output, and slow cognitive function. Most people underestimate how much fluid they lose during training, especially in heated environments like our Hot Pilates studio. A good baseline is to drink 500ml of water in the two hours before training, sip throughout your session, and replace what you've lost afterward. Adding electrolytes — sodium, potassium, magnesium — is beneficial for longer or more intense sessions. Our functional drinks at the Healthy Bar include electrolyte-balanced options for exactly this purpose."
+        },
+        {
+          "heading": "Simplicity wins",
+          "body": "The fitness industry loves to complicate nutrition. Special supplements, precise macro ratios, meal timing protocols down to the minute. But the evidence is clear: consistency with the basics beats perfection with the details. Eat enough protein. Eat plenty of vegetables. Stay hydrated. Time your meals sensibly around training. Get your micronutrients from real food. That's 90% of the game. The remaining 10% — supplement timing, carb cycling, periodised nutrition — only matters once the basics are locked in. Start simple. Build from there."
+        }
+      ]
+    },
+    "boutique_fitness_consistency": {
+      "title": "Why Boutique Fitness Works Better for Consistency",
+      "category": "Community",
+      "readTime": "4 min read",
+      "intro": "The biggest predictor of fitness results isn't the programme, the equipment, or even the coach. It's consistency. And consistency is where boutique fitness environments dramatically outperform traditional big-box gyms. Here's why smaller, community-driven spaces like Pomona Club create lasting habits where other models fail.",
+      "sections": [
+        {
+          "heading": "The accountability of small groups",
+          "body": "In a large commercial gym, you're anonymous. Nobody notices if you skip a week. Nobody checks in on your progress. This anonymity feels liberating at first — no pressure, no judgement. But it also removes one of the most powerful drivers of consistent behaviour: social accountability. In a boutique setting, coaches know your name. They notice when you're absent. Other members become familiar faces you look forward to seeing. This creates a gentle but effective form of accountability that keeps people showing up even on days when motivation is low."
+        },
+        {
+          "heading": "Structure removes decision fatigue",
+          "body": "One of the most underestimated barriers to consistency is decision fatigue. Walking into a gym with 200 machines and no plan is overwhelming. What should I train today? How many sets? What weight? These micro-decisions add friction, and friction kills habits. Boutique class-based training removes this entirely. You book a session, you show up, and a qualified coach tells you exactly what to do for the next 45-60 minutes. The cognitive load drops to zero, making it dramatically easier to build and maintain the habit."
+        },
+        {
+          "heading": "Quality of coaching matters",
+          "body": "In most commercial gyms, personal training is an expensive add-on and floor coaching is minimal. In a boutique environment like Pomona Club, every session is coach-led. This means your technique is monitored, your intensity is appropriate, and your programme is progressing — without paying premium personal training rates. This matters not just for safety and results, but for confidence. Many people abandon training because they feel lost or unsure. Expert coaching eliminates that uncertainty."
+        },
+        {
+          "heading": "Community as a retention engine",
+          "body": "The data on fitness retention is stark: most gym memberships go unused within three months. But boutique fitness studios see dramatically higher retention rates. The reason is community. When your training environment is also your social environment — when you have friends there, when it's part of your identity — quitting feels like losing something meaningful, not just cancelling a direct debit. At Pomona Club, the Healthy Bar extends this effect: members stay after sessions, share meals, and build relationships that make the club a destination, not just a gym."
+        },
+        {
+          "heading": "The environment shapes behaviour",
+          "body": "Humans are profoundly influenced by their environment. A space that feels premium, clean, intentionally designed, and welcoming creates a positive emotional association with training. You want to be there. Compare this with a crowded, poorly maintained gym where equipment is broken and the atmosphere is chaotic. The environment isn't superficial — it's a fundamental driver of whether you'll build a lasting relationship with fitness. Every detail at Pomona Club, from the lighting to the music to the materials, is designed to make training feel like a privilege, not a chore."
+        }
+      ]
+    },
+    "first_hyrox_session": {
+      "title": "How to Prepare for Your First HYROX Session",
+      "category": "HYROX",
+      "readTime": "5 min read",
+      "intro": "HYROX has rapidly become one of the most exciting fitness competitions in Europe — and it's arriving at Pomona Club. Whether you're eyeing your first race or just curious about the training format, here's everything you need to know before stepping into a HYROX session.",
+      "sections": [
+        {
+          "heading": "What is HYROX?",
+          "body": "HYROX is a global fitness race that combines 8km of running with 8 functional workout stations. Between each 1km run, you complete a station: exercises like the SkiErg, sled push, sled pull, burpee broad jumps, rowing, farmers carry, sandbag lunges, and wall balls. It's designed to test all-round fitness — cardiovascular endurance, strength endurance, mental resilience, and functional capacity. Unlike CrossFit competitions, the format is standardised worldwide, meaning your time is directly comparable to every other HYROX competitor globally."
+        },
+        {
+          "heading": "You don't need to be an athlete",
+          "body": "One of the biggest misconceptions about HYROX is that it's only for elite fitness enthusiasts. In reality, the format is highly accessible. The weights are manageable, the running pace is self-selected, and the stations are based on fundamental movements that anyone can learn. At Pomona Club, our HYROX sessions are designed for all levels. Coaches scale the weights and intensity so beginners can build competence while experienced athletes can push their limits. You'll be surprised how quickly you progress."
+        },
+        {
+          "heading": "How to prepare physically",
+          "body": "If you're preparing for your first session, focus on three areas: running capacity (build a comfortable 5km base before worrying about speed), functional strength (practice sled pushes, lunges, and carries at moderate weights), and grip endurance (your grip will be the first thing to fail on competition day). In the weeks before your first session, add some zone 2 cardio to your routine and practice the individual stations at low intensity. Our coaches will handle the rest during the session itself."
+        },
+        {
+          "heading": "What to bring and expect",
+          "body": "Wear comfortable running shoes with good cushioning — this isn't the session for minimalist shoes or lifting shoes. Bring a water bottle and a small towel. Expect to work hard but in a structured, coached environment. A typical Pomona HYROX session runs 50-60 minutes and simulates race conditions with modified distances and weights. You'll work through several stations with running intervals, with coaches guiding your pacing and technique throughout."
+        },
+        {
+          "heading": "The mental game",
+          "body": "HYROX is as much a mental challenge as a physical one. The race is long — most people finish in 70-90 minutes — and the transitions between running and stations require constant mental resets. The best preparation is simply exposure: the more you practise the format, the more comfortable you become with the unique demands of switching between running and functional work. Our sessions build this mental resilience progressively, so when race day comes, nothing feels unfamiliar."
+        }
+      ]
+    },
+    "wellness_clubs_madrid": {
+      "title": "The Rise of Wellness Clubs in Madrid",
+      "category": "Madrid Lifestyle",
+      "readTime": "7 min read",
+      "intro": "Madrid is experiencing a quiet revolution in how its residents approach fitness and wellbeing. The era of the big-box gym is giving way to something more intentional, more integrated, and more human. Welcome to the age of the wellness club — and Pomona Club is at the forefront.",
+      "sections": [
+        {
+          "heading": "From gyms to lifestyle destinations",
+          "body": "For decades, the gym model in Madrid followed a predictable formula: large spaces, rows of machines, minimal coaching, aggressive pricing. Members were numbers, not names. The experience was purely transactional — you paid for access to equipment and were largely left on your own. But a new generation of Madrid residents is demanding something different. They want expertise, not just equipment. They want community, not just square metres. They want a space that reflects their values: quality, intentionality, and a holistic approach to health."
+        },
+        {
+          "heading": "The integration of training, recovery, and nutrition",
+          "body": "What defines a wellness club versus a traditional gym is integration. Rather than training in one place, eating in another, and seeking recovery elsewhere, a wellness club brings everything under one roof. At Pomona Club, you can complete a HIIT session, spend 20 minutes in the infrared sauna, and sit down to a protein-rich meal at the Healthy Bar — all without leaving the building. This integration isn't just convenient; it's philosophically coherent. It reflects the evidence-based understanding that fitness, nutrition, and recovery are inseparable components of health."
+        },
+        {
+          "heading": "The social element",
+          "body": "Madrid is inherently a social city. Its culture revolves around shared meals, terraza conversations, and community rituals. The best wellness clubs in Madrid tap into this cultural DNA. They create spaces where post-workout smoothies become social occasions, where running clubs end at a coffee bar, where the boundary between training and socialising is intentionally blurred. This isn't a distraction from fitness — it's an amplifier. People who train in social environments stay more consistent, enjoy the process more, and build identities around their health habits."
+        },
+        {
+          "heading": "Quality over quantity",
+          "body": "The wellness club model in Madrid is also a response to overcrowding. Anyone who has tried to train at a large Madrid gym during peak hours knows the frustration: queues for equipment, cramped changing rooms, impersonal service. Boutique spaces solve this by design. Smaller capacities mean more space per member, better coaching ratios, and a calmer, more premium experience. At Pomona Club, class sizes are deliberately capped to ensure every member receives genuine attention from their coach."
+        },
+        {
+          "heading": "Madrid's wellness future",
+          "body": "The trend is clear and accelerating. Madrid's most discerning residents — professionals, entrepreneurs, creatives, athletes — are gravitating toward spaces that respect their time, support their goals, and feel aligned with how they live the rest of their lives. The wellness club isn't a trend; it's an evolution. It represents a maturation of the fitness industry, from selling access to creating genuine value. Pomona Club exists because we believe Madrid deserves a space where training, recovery, nutrition, and community coexist beautifully. The future of fitness in this city isn't bigger — it's better."
+        }
+      ]
+    }
   }
 }

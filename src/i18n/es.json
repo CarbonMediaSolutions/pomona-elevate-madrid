@@ -77,7 +77,13 @@
     "activeMembers": "Miembros activos",
     "weeklyClasses": "Clases semanales",
     "expertCoaches": "Entrenadores expertos",
-    "averageRating": "Valoración media"
+    "averageRating": "Valoración media",
+    "testimonials": [
+      { "name": "Marta G.", "role": "Arquitecta & competidora HYROX", "quote": "Pomona cambió cómo pienso sobre el entrenamiento. No son solo las sesiones — es la recuperación, la comida, las personas. Nunca he sido más constante." },
+      { "name": "Carlos R.", "role": "Fundador tech", "quote": "Me uní por el gimnasio y me quedé por la comunidad. Los coaches realmente se preocupan, y el healthy bar es mi segunda oficina después de cada sesión matutina." },
+      { "name": "Elena S.", "role": "Consultora de bienestar", "quote": "La suite de recuperación por sí sola vale la membresía. Sauna infrarroja después de Pilates, luego un smoothie en el bar — es la mejor parte de mi semana." },
+      { "name": "Javier M.", "role": "Corredor profesional", "quote": "El running club y la preparación HYROX en Pomona están a otro nivel. Grupos pequeños, programación inteligente, resultados reales. Así debería ser el fitness boutique." }
+    ]
   },
   "membership": {
     "tag": "Membresías",

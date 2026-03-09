@@ -10,19 +10,17 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="min-h-screen flex flex-col"
+    >
       <Header />
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="flex-1 pb-16 md:pb-0"
-      >
-        {children}
-      </motion.main>
+      <main className="flex-1 pb-16 md:pb-0">{children}</main>
       <Footer />
       <BackToTop />
-    </div>
+    </motion.div>
   );
 };
 

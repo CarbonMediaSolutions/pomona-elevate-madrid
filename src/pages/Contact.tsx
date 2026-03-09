@@ -1,33 +1,26 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Car, Phone, Mail } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useTranslation } from "react-i18next";
-
-const faqs = [
-  { q: "What should I bring for my first visit?", a: "Just yourself and workout clothes. We provide towels, showers, lockers, and toiletries. Water bottles are available at the bar." },
-  { q: "Is Pomona Club suitable for beginners?", a: "Absolutely. Our coaches scale every session to your level. Many of our most committed members started as complete beginners." },
-  { q: "Do I need a membership to visit?", a: "You can book a trial session or purchase a day pass without a membership. The healthy bar is open to everyone." },
-  { q: "Do you have changing rooms and showers?", a: "Yes. We have spacious changing rooms with individual showers, lockers, hair dryers, and premium toiletries." },
-  { q: "Is there parking nearby?", a: "Several private parking garages are within a 2-minute walk. Metro Serrano (L4) is 200 metres away." },
-  { q: "Can I book a trial session?", a: "Yes. Book your complimentary first session through our website or by contacting us directly." },
-];
+import heroImg from "@/assets/hero-gym.jpg";
 
 const Contact = () => {
   const { t } = useTranslation();
   const interestOptions = t("contactPage.interestOptions", { returnObjects: true }) as string[];
   const firstVisitItems = t("contactPage.firstVisitItems", { returnObjects: true }) as string[];
+  const faqs = t("contactFaqs", { returnObjects: true }) as { q: string; a: string }[];
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("contactPage.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("contactPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("contactPage.body")}</p>
-        </div>
-      </section>
+      <PageHero
+        image={heroImg}
+        tag={t("contactPage.tag")}
+        headline={t("contactPage.headline")}
+        body={t("contactPage.body")}
+      />
 
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -111,14 +104,16 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-editorial-md text-foreground">{t("contactPage.faqHeadline")}</h2>
           </div>
-          <Accordion type="single" collapsible className="space-y-2">
-            {faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`} className="card-premium px-6 border-border">
-                <AccordionTrigger className="text-foreground font-medium text-left py-5 hover:no-underline">{faq.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5">{faq.a}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {Array.isArray(faqs) && (
+            <Accordion type="single" collapsible className="space-y-2">
+              {faqs.map((faq, i) => (
+                <AccordionItem key={i} value={`faq-${i}`} className="card-premium px-6 border-border">
+                  <AccordionTrigger className="text-foreground font-medium text-left py-5 hover:no-underline">{faq.q}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">{faq.a}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
         </div>
       </Section>
     </Layout>

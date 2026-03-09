@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const MembershipTeaser = () => {
@@ -12,10 +12,7 @@ const MembershipTeaser = () => {
       name: t("membership.essentials"),
       price: "89",
       ideal: t("membership.essentialsIdeal"),
-      features: [
-        "8 classes per month", "Open gym access", "Healthy bar member pricing",
-        "1 recovery session / month", "App booking & scheduling",
-      ],
+      features: t("membershipPlans.essentialsFeaturesShort", { returnObjects: true }) as string[],
       cta: t("membership.startEssentials"),
       featured: false,
     },
@@ -23,10 +20,7 @@ const MembershipTeaser = () => {
       name: t("membership.plus"),
       price: "139",
       ideal: t("membership.plusIdeal"),
-      features: [
-        "Unlimited classes", "Full open gym access", "Recovery suite access",
-        "Priority booking", "2 physio sessions / month", "Guest passes (2/month)", "Healthy bar perks",
-      ],
+      features: t("membershipPlans.plusFeaturesShort", { returnObjects: true }) as string[],
       cta: t("membership.joinPlus"),
       featured: true,
     },
@@ -34,10 +28,7 @@ const MembershipTeaser = () => {
       name: t("membership.signature"),
       price: "199",
       ideal: t("membership.signatureIdeal"),
-      features: [
-        "Everything in Club Plus", "Unlimited recovery & sauna", "Monthly nutrition consult",
-        "Personal training session", "Priority event access", "Exclusive member events", "Laundry service",
-      ],
+      features: t("membershipPlans.signatureFeaturesShort", { returnObjects: true }) as string[],
       cta: t("membership.goSignature"),
       featured: false,
     },
@@ -53,9 +44,20 @@ const MembershipTeaser = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {plans.map((plan) => (
-          <div key={plan.name} className={`card-premium p-8 flex flex-col ${plan.featured ? "border-primary/40 ring-1 ring-primary/20" : ""}`}>
+          <div
+            key={plan.name}
+            className={`card-premium p-8 flex flex-col transition-all duration-500 ${
+              plan.featured ? "border-primary/40 ring-1 ring-primary/20 relative overflow-visible" : ""
+            }`}
+          >
             {plan.featured && (
-              <span className="pill-tag text-[10px] self-start mb-4 border-primary/30 text-primary">{t("membership.mostPopular")}</span>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                <span className="inline-flex items-center gap-1.5 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-widest rounded-full text-primary-foreground"
+                  style={{ background: "var(--gradient-accent)" }}>
+                  <Sparkles className="w-3 h-3" />
+                  {t("membership.mostPopular")}
+                </span>
+              </div>
             )}
             <h3 className="font-serif text-2xl text-foreground">{plan.name}</h3>
             <p className="text-sm text-muted-foreground mt-1">{plan.ideal}</p>
@@ -64,7 +66,7 @@ const MembershipTeaser = () => {
               <span className="text-sm text-muted-foreground">{t("membership.month")}</span>
             </div>
             <ul className="flex flex-col gap-3 flex-1">
-              {plan.features.map((f) => (
+              {Array.isArray(plan.features) && plan.features.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-sm text-secondary-foreground">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   {f}

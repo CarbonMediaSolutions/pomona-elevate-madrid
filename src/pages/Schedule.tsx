@@ -1,9 +1,11 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import openGymImg from "@/assets/open-gym.jpg";
 
 const schedule = [
   { time: "07:00", class: "HIIT & Performance", coach: "Andrés Ruiz", duration: "45 min", day: 0, spots: 3 },
@@ -37,15 +39,14 @@ const Schedule = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("schedulePage.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground">{t("schedulePage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("schedulePage.body")}</p>
-        </div>
-      </section>
+      <PageHero
+        image={openGymImg}
+        tag={t("schedulePage.tag")}
+        headline={t("schedulePage.headline")}
+        body={t("schedulePage.body")}
+      />
 
-      <div className="section-container mb-12">
+      <div className="section-container my-12">
         <div className="card-premium p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <h3 className="font-serif text-lg text-foreground">{t("schedulePage.trialHeadline")}</h3>

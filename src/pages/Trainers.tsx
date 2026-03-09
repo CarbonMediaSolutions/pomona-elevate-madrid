@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -29,15 +30,14 @@ const Trainers = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("trainers.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("trainersPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("trainersPage.body")}</p>
-        </div>
-      </section>
+      <PageHero
+        image={trainer1}
+        tag={t("trainers.tag")}
+        headline={t("trainersPage.headline")}
+        body={t("trainersPage.body")}
+      />
 
-      <div className="section-container mb-12">
+      <div className="section-container my-12">
         <div className="flex flex-wrap justify-center gap-2">
           {filters.map((f) => (
             <button key={f.value} onClick={() => setActiveFilter(f.value)} className={`pill-tag cursor-pointer transition-all duration-300 ${activeFilter === f.value ? "bg-primary/10 border-primary/40 text-primary" : "hover:border-foreground/20"}`}>{f.label}</button>

@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
+const TikTokIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.71a8.21 8.21 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.14z" />
+  </svg>
+);
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [email, setEmail] = useState("");
 
   return (
     <footer className="border-t border-border bg-background">
@@ -21,9 +30,32 @@ const Footer = () => {
               <a href="https://instagram.com/pomonaclub" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
+              <a href="https://tiktok.com/@pomonaclub" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="TikTok">
+                <TikTokIcon />
+              </a>
               <a href="mailto:hello@pomonaclub.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />
               </a>
+            </div>
+
+            {/* Newsletter */}
+            <div className="mt-8">
+              <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground font-medium mb-3">{t("footer.newsletter")}</p>
+              <form
+                onSubmit={(e) => { e.preventDefault(); setEmail(""); }}
+                className="flex gap-2"
+              >
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={t("footer.emailPlaceholder")}
+                  className="flex-1 min-w-0 bg-secondary border border-border rounded-md px-3 py-2 text-xs text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-all"
+                />
+                <Button variant="hero" size="sm" type="submit" className="shrink-0 text-xs px-3">
+                  →
+                </Button>
+              </form>
             </div>
           </div>
 

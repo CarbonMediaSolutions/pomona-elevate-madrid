@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import recoveryImg from "@/assets/recovery-room.jpg";
@@ -18,24 +19,12 @@ const Recovery = () => {
 
   return (
     <Layout>
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("recoveryPage.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("recoveryPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("recoveryPage.body")}</p>
-        </div>
-      </section>
-
-      <div className="section-container mb-16">
-        <div className="relative rounded-lg overflow-hidden aspect-[21/9]">
-          <img src={recoveryImg} alt="Pomona Club recovery suite" className="w-full h-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
-          <div className="absolute bottom-8 left-8 max-w-md">
-            <h2 className="font-serif text-2xl text-foreground">{t("recoveryPage.suiteTitle")}</h2>
-            <p className="text-sm text-foreground/70 mt-2">{t("recoveryPage.suiteDesc")}</p>
-          </div>
-        </div>
-      </div>
+      <PageHero
+        image={recoveryImg}
+        tag={t("recoveryPage.tag")}
+        headline={t("recoveryPage.headline")}
+        body={t("recoveryPage.body")}
+      />
 
       <Section>
         <div className="flex flex-col gap-6">

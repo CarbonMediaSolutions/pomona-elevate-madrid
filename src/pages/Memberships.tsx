@@ -1,62 +1,71 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useTranslation } from "react-i18next";
-
-const faqs = [
-  { q: "Can I try before I commit?", a: "Absolutely. We offer a complimentary first session so you can experience the club, meet our coaches, and find the right membership for you." },
-  { q: "Can I pause or freeze my membership?", a: "Yes. All memberships include one free pause per year (up to 30 days). Additional freezes are available for medical or travel reasons." },
-  { q: "Is there a minimum commitment?", a: "Club Essentials is month-to-month. Club Plus and Signature offer both monthly and annual options, with annual plans receiving a 15% discount." },
-  { q: "Do you offer corporate memberships?", a: "Yes. We work with companies across Madrid to offer team wellness packages. Contact us for a tailored corporate proposal." },
-  { q: "Can I bring a friend?", a: "Club Plus and Signature members receive guest passes each month. Day passes are also available for purchase at reception." },
-  { q: "What's included in recovery access?", a: "Recovery suite access includes infrared sauna, traditional sauna, cold plunge guidance, and access to our recovery lounge. Physiotherapy is available as an add-on or included in higher tiers." },
-];
+import heroImg from "@/assets/hero-gym.jpg";
 
 const Memberships = () => {
   const { t } = useTranslation();
 
+  const faqs = t("membershipFaqs", { returnObjects: true }) as { q: string; a: string }[];
+
   const plans = [
     {
       name: t("membership.essentials"), price: "89",
-      ideal: "For those building a consistent routine",
-      desc: "Start your Pomona journey with flexible access to classes, the gym, and member-only bar pricing.",
-      features: ["8 group classes per month", "Open gym access (off-peak)", "Healthy bar member pricing", "1 recovery session / month", "App booking & scheduling", "Locker & shower access"],
+      ideal: t("membership.essentialsIdeal"),
+      desc: t("membershipPlans.essentialsDesc"),
+      features: t("membershipPlans.essentialsFeatures", { returnObjects: true }) as string[],
       cta: t("membership.startEssentials"), featured: false,
     },
     {
       name: t("membership.plus"), price: "139",
-      ideal: "For committed performers who want more",
-      desc: "Unlimited training, full recovery access, and the perks that make Pomona a daily destination.",
-      features: ["Unlimited group classes", "Full open gym access (all hours)", "Recovery suite access (sauna, infrared)", "Priority class booking", "2 physiotherapy sessions / month", "Guest passes (2/month)", "Healthy bar perks & discounts", "Locker & towel service"],
+      ideal: t("membership.plusIdeal"),
+      desc: t("membershipPlans.plusDesc"),
+      features: t("membershipPlans.plusFeatures", { returnObjects: true }) as string[],
       cta: t("membership.joinPlus"), featured: true,
     },
     {
       name: t("membership.signature"), price: "199",
-      ideal: "The full Pomona immersion",
-      desc: "Everything the club offers, with personal attention, premium recovery, and exclusive community access.",
-      features: ["Everything in Club Plus", "Unlimited recovery & sauna", "Monthly 1-on-1 nutrition consultation", "1 personal training session / month", "Priority event & workshop access", "Exclusive Signature member events", "Premium laundry service", "VIP healthy bar experience"],
+      ideal: t("membership.signatureIdeal"),
+      desc: t("membershipPlans.signatureDesc"),
+      features: t("membershipPlans.signatureFeatures", { returnObjects: true }) as string[],
       cta: t("membership.goSignature"), featured: false,
     },
   ];
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("membership.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("membershipsPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("membershipsPage.body")}</p>
-        </div>
-      </section>
+      <PageHero
+        image={heroImg}
+        tag={t("membership.tag")}
+        headline={t("membershipsPage.headline")}
+        body={t("membershipsPage.body")}
+      />
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {plans.map((plan) => (
-            <div key={plan.name} className={`card-premium p-8 flex flex-col ${plan.featured ? "border-primary/40 ring-1 ring-primary/20" : ""}`}>
-              {plan.featured && <span className="pill-tag text-[10px] self-start mb-4 border-primary/30 text-primary">{t("membership.mostPopular")}</span>}
+            <div
+              key={plan.name}
+              className={`card-premium p-8 flex flex-col transition-all duration-500 ${
+                plan.featured
+                  ? "border-primary/40 ring-1 ring-primary/20 relative overflow-visible"
+                  : ""
+              }`}
+            >
+              {plan.featured && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                  <span className="inline-flex items-center gap-1.5 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-widest rounded-full text-primary-foreground"
+                    style={{ background: "var(--gradient-accent)" }}>
+                    <Sparkles className="w-3 h-3" />
+                    {t("membership.mostPopular")}
+                  </span>
+                </div>
+              )}
               <h2 className="font-serif text-2xl text-foreground">{plan.name}</h2>
               <p className="text-sm text-muted-foreground mt-1">{plan.ideal}</p>
               <p className="text-body text-sm mt-3">{plan.desc}</p>
@@ -97,14 +106,16 @@ const Memberships = () => {
           <div className="text-center mb-12">
             <h2 className="text-editorial-md text-foreground">{t("membershipsPage.faqHeadline")}</h2>
           </div>
-          <Accordion type="single" collapsible className="space-y-2">
-            {faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`} className="card-premium px-6 border-border">
-                <AccordionTrigger className="text-foreground font-medium text-left py-5 hover:no-underline">{faq.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5">{faq.a}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {Array.isArray(faqs) && (
+            <Accordion type="single" collapsible className="space-y-2">
+              {faqs.map((faq, i) => (
+                <AccordionItem key={i} value={`faq-${i}`} className="card-premium px-6 border-border">
+                  <AccordionTrigger className="text-foreground font-medium text-left py-5 hover:no-underline">{faq.q}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">{faq.a}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
         </div>
       </Section>
     </Layout>

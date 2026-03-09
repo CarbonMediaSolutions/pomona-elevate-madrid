@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import hiitImg from "@/assets/hiit-training.jpg";
 import runningImg from "@/assets/running-club.jpg";
 import barImg from "@/assets/healthy-bar.jpg";
@@ -23,13 +24,12 @@ const Journal = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("journalPage.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("journalPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("journalPage.body")}</p>
-        </div>
-      </section>
+      <PageHero
+        image={pilatesImg}
+        tag={t("journalPage.tag")}
+        headline={t("journalPage.headline")}
+        body={t("journalPage.body")}
+      />
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

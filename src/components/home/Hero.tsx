@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -21,26 +22,38 @@ const Hero = () => {
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="image-overlay" />
+        {/* Enhanced vignette overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
 
-      {/* Content */}
+      {/* Content — staggered */}
       <div className="relative z-10 section-container pb-20 md:pb-28 lg:pb-36">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="max-w-3xl"
-        >
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">
+        <div className="max-w-3xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+            className="text-editorial-xl text-foreground whitespace-pre-line"
+          >
             {t("hero.headline")}
-          </h1>
+          </motion.h1>
 
-          <p className="text-body-lg mt-6 max-w-xl text-foreground/70">
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
+            className="text-body-lg mt-6 max-w-xl text-foreground/70"
+          >
             {t("hero.subtitle")}
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 mt-10"
+          >
             <Link to="/schedule">
               <Button variant="hero" size="xl">
                 {t("hero.cta1")}
@@ -51,18 +64,38 @@ const Hero = () => {
                 {t("hero.cta2")}
               </Button>
             </Link>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-2 mt-10 text-xs uppercase tracking-[0.15em] text-foreground/40 font-medium">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="flex flex-wrap gap-x-6 gap-y-2 mt-10 text-xs uppercase tracking-[0.15em] text-foreground/40 font-medium"
+          >
             {tags.map((tag, i) => (
               <span key={i}>
                 {i > 0 && <span className="text-primary mr-6">·</span>}
                 {tag}
               </span>
             ))}
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8, duration: 1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-5 h-5 text-foreground/30" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

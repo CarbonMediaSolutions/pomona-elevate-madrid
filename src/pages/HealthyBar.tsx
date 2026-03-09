@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import barImg from "@/assets/healthy-bar.jpg";
@@ -40,19 +41,12 @@ const HealthyBar = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("healthyBarSection.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("healthyBarPage.headline")}</h1>
-          <p className="text-body-lg mt-6">{t("healthyBarPage.body")}</p>
-        </div>
-      </section>
-
-      <div className="section-container mb-16">
-        <div className="relative rounded-lg overflow-hidden aspect-[21/9]">
-          <img src={barImg} alt="Pomona Club healthy bar" className="w-full h-full object-cover" loading="lazy" />
-        </div>
-      </div>
+      <PageHero
+        image={barImg}
+        tag={t("healthyBarSection.tag")}
+        headline={t("healthyBarPage.headline")}
+        body={t("healthyBarPage.body")}
+      />
 
       {menuCategories.map((cat) => (
         <Section key={cat.name}>

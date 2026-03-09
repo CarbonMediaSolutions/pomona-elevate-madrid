@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import Section from "@/components/layout/Section";
+import PageHero from "@/components/layout/PageHero";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero-gym.jpg";
@@ -17,18 +18,11 @@ const About = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
-        <div className="section-container text-center max-w-3xl mx-auto">
-          <span className="pill-tag mb-6 inline-block">{t("aboutPage.tag")}</span>
-          <h1 className="text-editorial-xl text-foreground whitespace-pre-line">{t("aboutPage.headline")}</h1>
-        </div>
-      </section>
-
-      <div className="section-container mb-16">
-        <div className="relative rounded-lg overflow-hidden aspect-[21/9]">
-          <img src={heroImg} alt="Pomona Club interior" className="w-full h-full object-cover" loading="lazy" />
-        </div>
-      </div>
+      <PageHero
+        image={heroImg}
+        tag={t("aboutPage.tag")}
+        headline={t("aboutPage.headline")}
+      />
 
       <Section>
         <div className="max-w-3xl mx-auto space-y-12">

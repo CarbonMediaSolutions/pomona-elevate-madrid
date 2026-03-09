@@ -77,7 +77,13 @@
     "activeMembers": "Miembros activos",
     "weeklyClasses": "Clases semanales",
     "expertCoaches": "Entrenadores expertos",
-    "averageRating": "Valoración media"
+    "averageRating": "Valoración media",
+    "testimonials": [
+      { "name": "Marta G.", "role": "Arquitecta & competidora HYROX", "quote": "Pomona cambió cómo pienso sobre el entrenamiento. No son solo las sesiones — es la recuperación, la comida, las personas. Nunca he sido más constante." },
+      { "name": "Carlos R.", "role": "Fundador tech", "quote": "Me uní por el gimnasio y me quedé por la comunidad. Los coaches realmente se preocupan, y el healthy bar es mi segunda oficina después de cada sesión matutina." },
+      { "name": "Elena S.", "role": "Consultora de bienestar", "quote": "La suite de recuperación por sí sola vale la membresía. Sauna infrarroja después de Pilates, luego un smoothie en el bar — es la mejor parte de mi semana." },
+      { "name": "Javier M.", "role": "Corredor profesional", "quote": "El running club y la preparación HYROX en Pomona están a otro nivel. Grupos pequeños, programación inteligente, resultados reales. Así debería ser el fitness boutique." }
+    ]
   },
   "membership": {
     "tag": "Membresías",
@@ -151,7 +157,9 @@
     "hours": "Lun–Vie: 6:30–22:00\nSáb–Dom: 8:00–20:00",
     "rights": "© {{year}} Pomona Club Madrid. Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio"
+    "terms": "Términos de Servicio",
+    "newsletter": "Mantente al día",
+    "emailPlaceholder": "Tu email"
   },
   "membershipsPage": {
     "headline": "Elige el ritmo\nque se adapta a tu vida.",
@@ -284,6 +292,33 @@
     "message": "¡Ups! Página no encontrada",
     "backHome": "Volver al Inicio"
   },
+  "membershipPlans": {
+    "essentialsDesc": "Comienza tu camino en Pomona con acceso flexible a clases, el gimnasio y precios exclusivos en el bar.",
+    "essentialsFeatures": ["8 clases grupales al mes", "Acceso a gimnasio abierto (fuera de hora punta)", "Precios de miembro en el healthy bar", "1 sesión de recuperación / mes", "Reservas y horarios por app", "Acceso a taquillas y duchas"],
+    "essentialsFeaturesShort": ["8 clases al mes", "Acceso a gimnasio abierto", "Precios de miembro en el bar", "1 sesión de recuperación / mes", "Reservas por app"],
+    "plusDesc": "Entrenamiento ilimitado, acceso total a recuperación y las ventajas que hacen de Pomona un destino diario.",
+    "plusFeatures": ["Clases grupales ilimitadas", "Acceso total a gimnasio (todas las horas)", "Acceso a suite de recuperación (sauna, infrarrojo)", "Reserva prioritaria de clases", "2 sesiones de fisioterapia / mes", "Pases de invitado (2/mes)", "Descuentos y ventajas en el healthy bar", "Servicio de taquilla y toalla"],
+    "plusFeaturesShort": ["Clases ilimitadas", "Acceso total a gimnasio", "Suite de recuperación", "Reserva prioritaria", "2 sesiones de fisio / mes", "Pases de invitado (2/mes)", "Ventajas en el bar"],
+    "signatureDesc": "Todo lo que el club ofrece, con atención personal, recuperación premium y acceso exclusivo a la comunidad.",
+    "signatureFeatures": ["Todo en Club Plus", "Recuperación y sauna ilimitadas", "Consulta nutricional 1-on-1 mensual", "1 sesión de entrenamiento personal / mes", "Acceso prioritario a eventos y talleres", "Eventos exclusivos para miembros Signature", "Servicio de lavandería premium", "Experiencia VIP en el healthy bar"],
+    "signatureFeaturesShort": ["Todo en Club Plus", "Recuperación y sauna ilimitadas", "Consulta nutricional mensual", "Sesión de entrenamiento personal", "Acceso prioritario a eventos", "Eventos exclusivos", "Servicio de lavandería"]
+  },
+  "membershipFaqs": [
+    { "q": "¿Puedo probar antes de comprometerme?", "a": "Por supuesto. Ofrecemos una primera sesión gratuita para que experimentes el club, conozcas a nuestros coaches y encuentres la membresía adecuada para ti." },
+    { "q": "¿Puedo pausar o congelar mi membresía?", "a": "Sí. Todas las membresías incluyen una pausa gratuita al año (hasta 30 días). Las pausas adicionales están disponibles por razones médicas o de viaje." },
+    { "q": "¿Hay un compromiso mínimo?", "a": "Club Essentials es mes a mes. Club Plus y Signature ofrecen opciones mensuales y anuales, con un 15% de descuento en planes anuales." },
+    { "q": "¿Ofrecen membresías corporativas?", "a": "Sí. Trabajamos con empresas en Madrid para ofrecer paquetes de bienestar para equipos. Contáctanos para una propuesta corporativa personalizada." },
+    { "q": "¿Puedo traer a un amigo?", "a": "Los miembros Club Plus y Signature reciben pases de invitado cada mes. Los pases de día también están disponibles en recepción." },
+    { "q": "¿Qué incluye el acceso a recuperación?", "a": "El acceso a la suite de recuperación incluye sauna infrarroja, sauna tradicional, guía de inmersión en frío y acceso al lounge de recuperación. La fisioterapia está disponible como complemento o incluida en niveles superiores." }
+  ],
+  "contactFaqs": [
+    { "q": "¿Qué debo traer para mi primera visita?", "a": "Solo tú y ropa de entrenamiento. Proporcionamos toallas, duchas, taquillas y artículos de aseo. Las botellas de agua están disponibles en el bar." },
+    { "q": "¿Es Pomona Club adecuado para principiantes?", "a": "Absolutamente. Nuestros coaches adaptan cada sesión a tu nivel. Muchos de nuestros miembros más comprometidos empezaron como principiantes completos." },
+    { "q": "¿Necesito una membresía para visitar?", "a": "Puedes reservar una sesión de prueba o comprar un pase de día sin membresía. El healthy bar está abierto para todos." },
+    { "q": "¿Tienen vestuarios y duchas?", "a": "Sí. Tenemos vestuarios amplios con duchas individuales, taquillas, secadores y artículos de aseo premium." },
+    { "q": "¿Hay aparcamiento cerca?", "a": "Varios parkings privados están a menos de 2 minutos a pie. Metro Serrano (L4) está a 200 metros." },
+    { "q": "¿Puedo reservar una sesión de prueba?", "a": "Sí. Reserva tu primera sesión gratuita a través de nuestra web o contactándonos directamente." }
+  ],
   "lang": {
     "en": "EN",
     "es": "ES"

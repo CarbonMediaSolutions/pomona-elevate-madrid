@@ -226,9 +226,9 @@ const Header = () => {
       </AnimatePresence>
 
       {/* Floating mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur-md border-t border-border/50 p-3">
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur-md border-t border-border/50 px-4 py-3.5 shadow-[0_-8px_30px_-10px_hsl(0_0%_0%/0.4)]">
         <Link to="/schedule">
-          <Button variant="hero" size="lg" className="w-full">
+          <Button variant="hero" size="lg" className="w-full text-sm font-semibold tracking-wide">
             {t("nav.bookSession")}
           </Button>
         </Link>

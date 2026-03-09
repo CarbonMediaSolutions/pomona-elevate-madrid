@@ -77,7 +77,13 @@
     "activeMembers": "Active members",
     "weeklyClasses": "Weekly classes",
     "expertCoaches": "Expert coaches",
-    "averageRating": "Average rating"
+    "averageRating": "Average rating",
+    "testimonials": [
+      { "name": "Marta G.", "role": "Architect & HYROX competitor", "quote": "Pomona changed how I think about training. It's not just the sessions — it's the recovery, the food, the people. I've never been more consistent." },
+      { "name": "Carlos R.", "role": "Tech founder", "quote": "I joined for the gym and stayed for the community. The coaches genuinely care, and the healthy bar is my second office after every morning session." },
+      { "name": "Elena S.", "role": "Wellness consultant", "quote": "The recovery suite alone is worth the membership. Infrared sauna after Pilates, then a smoothie at the bar — it's the best part of my week." },
+      { "name": "Javier M.", "role": "Professional runner", "quote": "The running club and HYROX prep at Pomona are next-level. Small groups, smart programming, real results. This is what boutique fitness should be." }
+    ]
   },
   "membership": {
     "tag": "Memberships",

@@ -157,7 +157,9 @@
     "hours": "Mon–Fri: 6:30–22:00\nSat–Sun: 8:00–20:00",
     "rights": "© {{year}} Pomona Club Madrid. All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "newsletter": "Stay in the loop",
+    "emailPlaceholder": "Your email"
   },
   "membershipsPage": {
     "headline": "Choose the rhythm\nthat fits your life.",

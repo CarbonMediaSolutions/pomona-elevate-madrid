@@ -3,12 +3,12 @@
     "training": "Entrenamiento",
     "recovery": "Recuperación",
     "healthyBar": "Healthy Bar",
-    "memberships": "Membresías",
+    "memberships": "Suscripciones",
     "trainers": "Entrenadores",
     "about": "Nosotros",
     "journal": "Journal",
     "contact": "Contacto",
-    "bookSession": "Reservar Sesión",
+    "bookSession": "Reserva Tu Sesión",
     "experience": "Experiencia",
     "club": "El Club"
   },
@@ -16,7 +16,7 @@
     "headline": "Donde el rendimiento\nse encuentra con el estilo de vida.",
     "subtitle": "Entrenamiento boutique, recuperación, nutrición y energía social saludable en el corazón de Madrid.",
     "cta1": "Reserva Tu Primera Sesión",
-    "cta2": "Explorar Membresías",
+    "cta2": "Descubre las Suscripciones",
     "tags": ["Entrenamiento Boutique", "Recuperación", "Healthy Bar", "Coaching Experto"]
   },
   "brand": {
@@ -27,10 +27,10 @@
     "trainDesc": "Sesiones dirigidas por expertos en fuerza, HIIT, Pilates y HYROX.",
     "recover": "Recupérate",
     "recoverDesc": "Sauna, infrarrojo, fisioterapia y movimiento restaurativo.",
-    "refuel": "Recarga",
-    "refuelDesc": "Smoothies, café y comidas nutritivas en nuestro healthy bar.",
+    "refuel": "Nutre",
+    "refuelDesc": "Smoothies, café de especialidad y platos nutritivos en nuestro healthy bar.",
     "connect": "Conecta",
-    "connectDesc": "Una comunidad construida alrededor de la ambición compartida y el ritual diario."
+    "connectDesc": "Una comunidad que comparte valores, energía y un espacio al que apetece volver cada día."
   },
   "pillars": {
     "tag": "La Experiencia",
@@ -38,11 +38,11 @@
     "trainTitle": "Entrena con intención",
     "trainDesc": "Desde sesiones de alta intensidad hasta Pilates consciente, cada clase está diseñada para desafiar, refinar y recompensar. Grupos pequeños. Entrenadores expertos. Progreso medible.",
     "recoverTitle": "Recupérate como un atleta",
-    "recoverDesc": "Sauna infrarroja, fisioterapia, sesiones de movilidad y protocolos de recuperación guiados. Porque lo que haces después del entrenamiento define lo que haces a continuación.",
-    "refuelTitle": "Recarga con estilo",
-    "refuelDesc": "Smoothies, café de especialidad, bowls proteicos y bebidas funcionales creados para el rendimiento y el placer. Quédate más. Come mejor.",
-    "belongTitle": "Pertenece al club",
-    "belongDesc": "Más que miembros — una comunidad de personas ambiciosas y conscientes de su salud que comparten valores, energía y un espacio al que vale la pena volver cada día.",
+    "recoverDesc": "Sauna infrarroja, fisioterapia, sesiones de movilidad y protocolos de recuperación guiados. Porque lo que haces después del entrenamiento define lo que viene a continuación.",
+    "refuelTitle": "Nutre con estilo",
+    "refuelDesc": "Smoothies, café de especialidad, bowls proteicos y bebidas funcionales pensados para el rendimiento y el disfrute. Quédate más. Come mejor.",
+    "belongTitle": "Forma parte del club",
+    "belongDesc": "Más que socios — una comunidad de personas ambiciosas y conscientes de su salud que comparten valores, energía y un espacio al que merece la pena volver cada día.",
     "coachLed": "Dirigido por coach",
     "smallGroup": "Grupo pequeño",
     "recoveryFirst": "Recuperación primero",
@@ -69,26 +69,26 @@
     "mindBody": "Mente-cuerpo",
     "trainYourWay": "Entrena a tu manera",
     "expertSupport": "Apoyo experto",
-    "refuelBeautifully": "Recarga con estilo"
+    "refuelBeautifully": "Nutre con estilo"
   },
   "social": {
-    "tag": "Voces de Miembros",
-    "headline": "Amado por profesionales de Madrid,\natletas y locales wellness-first.",
-    "activeMembers": "Miembros activos",
+    "tag": "Lo que dicen nuestros socios",
+    "headline": "Profesionales de Madrid,\natletas y amantes del bienestar confían en nosotros.",
+    "activeMembers": "Socios activos",
     "weeklyClasses": "Clases semanales",
     "expertCoaches": "Entrenadores expertos",
     "averageRating": "Valoración media",
     "testimonials": [
-      { "name": "Marta G.", "role": "Arquitecta & competidora HYROX", "quote": "Pomona cambió cómo pienso sobre el entrenamiento. No son solo las sesiones — es la recuperación, la comida, las personas. Nunca he sido más constante." },
-      { "name": "Carlos R.", "role": "Fundador tech", "quote": "Me uní por el gimnasio y me quedé por la comunidad. Los coaches realmente se preocupan, y el healthy bar es mi segunda oficina después de cada sesión matutina." },
-      { "name": "Elena S.", "role": "Consultora de bienestar", "quote": "La suite de recuperación por sí sola vale la membresía. Sauna infrarroja después de Pilates, luego un smoothie en el bar — es la mejor parte de mi semana." },
+      { "name": "Marta G.", "role": "Arquitecta & competidora HYROX", "quote": "Pomona cambió cómo pienso sobre el entrenamiento. No son solo las sesiones — es la recuperación, la comida, las personas. Nunca he sido tan constante." },
+      { "name": "Carlos R.", "role": "Fundador tech", "quote": "Me apunté por el gimnasio y me quedé por la comunidad. Los coaches se preocupan de verdad, y el healthy bar es mi segunda oficina después de cada sesión matutina." },
+      { "name": "Elena S.", "role": "Consultora de bienestar", "quote": "La suite de recuperación por sí sola merece la suscripción. Sauna infrarroja después de Pilates, luego un smoothie en el bar — es la mejor parte de mi semana." },
       { "name": "Javier M.", "role": "Corredor profesional", "quote": "El running club y la preparación HYROX en Pomona están a otro nivel. Grupos pequeños, programación inteligente, resultados reales. Así debería ser el fitness boutique." }
     ]
   },
   "membership": {
-    "tag": "Membresías",
+    "tag": "Suscripciones",
     "headline": "Elige el ritmo que se adapta a tu vida.",
-    "body": "Desde acceso flexible de entrenamiento hasta inmersión total en el club — cada membresía incluye la experiencia Pomona.",
+    "body": "Desde acceso flexible de entrenamiento hasta inmersión total en el club — cada suscripción incluye la experiencia Pomona.",
     "essentials": "Club Essentials",
     "essentialsIdeal": "Para quienes comienzan su camino en Pomona",
     "plus": "Club Plus",
@@ -97,18 +97,18 @@
     "signatureIdeal": "La inmersión total en Pomona",
     "mostPopular": "Más Popular",
     "month": "/mes",
-    "startEssentials": "Empezar con Essentials",
-    "joinPlus": "Unirse a Club Plus",
-    "goSignature": "Ir a Signature",
-    "trialLink": "¿No estás seguro? Reserva una sesión de prueba gratis →",
+    "startEssentials": "Empieza con Essentials",
+    "joinPlus": "Únete a Club Plus",
+    "goSignature": "Hazte Signature",
+    "trialLink": "¿No lo tienes claro? Reserva una sesión de prueba gratis →",
     "perMonth": "/mes"
   },
   "healthyBarSection": {
     "tag": "Healthy Bar",
-    "headline": "Recarga sin\nsalir del club.",
+    "headline": "Nutre sin\nsalir del club.",
     "body": "Desde zumos prensados en frío hasta café de especialidad, bowls proteicos hasta elixires funcionales — nuestro bar es donde la recuperación post-entreno se encuentra con la energía social de un café premium.",
-    "body2": "Diseñado para miembros que quieren quedarse más, comer mejor y convertir su sesión de entrenamiento en un ritual diario completo. El healthy bar está abierto tanto para miembros como para visitantes.",
-    "exploreMenu": "Explorar el Menú",
+    "body2": "Diseñado para socios que quieren quedarse más, comer mejor y convertir su sesión de entrenamiento en un ritual diario completo. El healthy bar está abierto tanto para socios como para visitantes.",
+    "exploreMenu": "Descubre el Menú",
     "smoothies": "Smoothies",
     "specialtyCoffee": "Café de Especialidad",
     "proteinBowls": "Bowls Proteicos",
@@ -119,25 +119,25 @@
     "tag": "Nuestros Coaches",
     "headline": "Dirigido por expertos. Siempre personal.",
     "body": "Cada sesión en Pomona está guiada por coaches que combinan experiencia profunda, atención genuina y un compromiso compartido con tu progreso.",
-    "meetAll": "Conoce a Todos los Coaches",
-    "bookWith": "Reservar con {{name}}"
+    "meetAll": "Conoce a todos los coaches",
+    "bookWith": "Reserva con {{name}}"
   },
   "location": {
     "tag": "Ubicación",
     "headline": "En el corazón del mejor\nbarrio de Madrid.",
-    "body": "Pomona Club está ubicado en la Calle de Serrano, en el barrio de Salamanca — uno de los barrios más elegantes y bien conectados de Madrid.",
+    "body": "Pomona Club está en la Calle de Serrano, en el barrio de Salamanca — uno de los barrios más elegantes y bien conectados de Madrid.",
     "salamanca": "Barrio de Salamanca",
     "monFri": "Lun–Vie: 6:30 – 22:00",
     "satSun": "Sáb–Dom: 8:00 – 20:00",
     "metro": "Metro Serrano (L4)",
     "parking": "Parking privado disponible cerca",
-    "planVisit": "Planifica Tu Visita"
+    "planVisit": "Planifica tu visita"
   },
   "finalCta": {
     "headline": "Únete al club que cambia\ncómo se siente el fitness.",
     "body": "Rendimiento, recuperación, nutrición y comunidad — todo en un espacio premium diseñado alrededor del bienestar moderno.",
     "cta1": "Reserva Tu Primera Sesión",
-    "cta2": "Ver Membresías"
+    "cta2": "Ver Suscripciones"
   },
   "footer": {
     "tagline": "Donde el rendimiento se encuentra con el estilo de vida. Entrenamiento boutique, recuperación y nutrición en el corazón de Madrid.",
@@ -148,7 +148,7 @@
     "scheduleBook": "Horarios y Reservas",
     "ourTrainers": "Nuestros Entrenadores",
     "theClub": "El Club",
-    "memberships": "Membresías",
+    "memberships": "Suscripciones",
     "aboutPomona": "Sobre Pomona",
     "journal": "Journal",
     "contactVisit": "Contacto y Visita",
@@ -157,15 +157,15 @@
     "hours": "Lun–Vie: 6:30–22:00\nSáb–Dom: 8:00–20:00",
     "rights": "© {{year}} Pomona Club Madrid. Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
+    "terms": "Términos y Condiciones",
     "newsletter": "Mantente al día",
     "emailPlaceholder": "Tu email"
   },
   "membershipsPage": {
     "headline": "Elige el ritmo\nque se adapta a tu vida.",
-    "body": "Cada membresía está diseñada para integrar entrenamiento, recuperación y nutrición en tu rutina diaria. Sin comisiones ocultas. Sin permanencia. Solo mejor movimiento, cada día.",
+    "body": "Cada suscripción está diseñada para integrar entrenamiento, recuperación y nutrición en tu rutina diaria. Sin comisiones ocultas. Sin permanencia. Solo mejor movimiento, cada día.",
     "trialHeadline": "¿Primera vez en Pomona?",
-    "trialBody": "Reserva una sesión de prueba gratuita. Experimenta una clase, explora el club y conoce a nuestro equipo — sin compromiso.",
+    "trialBody": "Reserva una sesión de prueba gratuita. Vive una clase, explora el club y conoce a nuestro equipo — sin compromiso.",
     "bookTrial": "Reserva Tu Prueba Gratis",
     "faqHeadline": "Preguntas Frecuentes"
   },
@@ -176,8 +176,8 @@
     "intensity": "Intensidad",
     "duration": "Duración",
     "coach": "Coach",
-    "bookClass": "Reservar Esta Clase",
-    "viewSchedule": "Ver Horario",
+    "bookClass": "Reserva esta clase",
+    "viewSchedule": "Consulta el horario",
     "all": "Todas",
     "performance": "Rendimiento",
     "mindBody": "Mente y Cuerpo",
@@ -192,25 +192,25 @@
     "suiteDesc": "Sauna, infrarrojo, fisioterapia y movimiento restaurativo — todo bajo un mismo techo.",
     "benefit": "Beneficio",
     "duration": "Duración",
-    "book": "Reservar",
-    "ctaHeadline": "Recuperación, integrada en tu membresía.",
-    "ctaBody": "Los miembros Club Plus y Signature disfrutan de acceso incluido a la suite de recuperación. La fisioterapia y nutrición están disponibles como complementos o incluidas en niveles superiores.",
-    "viewMemberships": "Ver Membresías",
-    "bookSession": "Reservar Sesión"
+    "book": "Reserva",
+    "ctaHeadline": "Recuperación, incluida en tu suscripción.",
+    "ctaBody": "Los socios Club Plus y Signature disfrutan de acceso incluido a la suite de recuperación. La fisioterapia y nutrición están disponibles como complementos o incluidas en niveles superiores.",
+    "viewMemberships": "Ver Suscripciones",
+    "bookSession": "Reserva tu sesión"
   },
   "healthyBarPage": {
-    "headline": "Recarga sin\nsalir del club.",
+    "headline": "Nutre sin\nsalir del club.",
     "body": "Desde zumos prensados en frío hasta café de especialidad, bowls proteicos hasta elixires funcionales — nuestro bar es donde la recuperación post-entreno se encuentra con la energía social de un café premium.",
-    "ctaHeadline": "Abierto a miembros y visitantes.",
-    "ctaBody": "El Bar Pomona da la bienvenida a todos. Los miembros disfrutan de precios exclusivos y ventajas. Ven, quédate más, recarga con estilo.",
-    "planVisit": "Planifica Tu Visita"
+    "ctaHeadline": "Abierto a socios y visitantes.",
+    "ctaBody": "El Bar Pomona da la bienvenida a todos. Los socios disfrutan de precios exclusivos y ventajas. Ven, quédate más, nutre con estilo.",
+    "planVisit": "Planifica tu visita"
   },
   "aboutPage": {
     "tag": "Nosotros",
     "headline": "Un club diseñado alrededor\nde cómo el bienestar moderno\nrealmente funciona.",
     "whyTitle": "Por qué existe Pomona",
     "whyBody1": "Pomona Club se fundó sobre una observación simple: la mejor versión del fitness no se trata solo del entrenamiento. Se trata de lo que sucede alrededor — la recuperación, la comida, las personas y el espacio en sí.",
-    "whyBody2": "Creamos Pomona para ser el lugar donde personas ambiciosas y conscientes de su salud en Madrid puedan entrenar con intención, recuperarse con propósito, recargar con estilo y pertenecer a algo a lo que vale la pena volver cada día.",
+    "whyBody2": "Creamos Pomona para ser el lugar donde personas ambiciosas y conscientes de su salud en Madrid puedan entrenar con intención, recuperarse con propósito, nutrirse con estilo y formar parte de algo a lo que merece la pena volver cada día.",
     "differentTitle": "Qué nos hace diferentes",
     "differentBody": "La mayoría de los gimnasios se centran en el entrenamiento. Nosotros diseñamos Pomona alrededor del día entero. Calidad de clases boutique combinada con libertad de gimnasio abierto. Una suite de recuperación que rivaliza con centros de bienestar independientes. Un healthy bar que es un destino en sí mismo. Y una comunidad de personas que comparten tus valores.",
     "spaceTitle": "El espacio",
@@ -225,10 +225,10 @@
     "value3Desc": "Alimenta tu cuerpo con comida que sabe tan bien como rinde.",
     "value4Title": "Comunidad sobre competición",
     "value4Desc": "Progresar juntos, celebrar juntos, pertenecer juntos.",
-    "ctaHeadline": "¿Listo para experimentar Pomona?",
-    "ctaBody": "Reserva una sesión de prueba y conoce el club por ti mismo. Sin compromiso. Solo mejor movimiento.",
-    "bookTrial": "Reservar Prueba",
-    "planVisit": "Planifica Tu Visita"
+    "ctaHeadline": "¿Quieres conocer Pomona?",
+    "ctaBody": "Reserva una sesión de prueba y descubre el club por ti mismo. Sin compromiso. Solo mejor movimiento.",
+    "bookTrial": "Reserva tu prueba",
+    "planVisit": "Planifica tu visita"
   },
   "trainersPage": {
     "headline": "Dirigido por expertos.\nSiempre personal.",
@@ -241,19 +241,19 @@
   "schedulePage": {
     "tag": "Horarios y Reservas",
     "headline": "Encuentra tu sesión.",
-    "body": "Explora el horario de esta semana, encuentra la clase que encaja y reserva tu plaza. ¿Primera vez? Empieza con una sesión de prueba gratis.",
+    "body": "Consulta el horario de esta semana, encuentra la clase que encaja y reserva tu plaza. ¿Primera vez? Empieza con una sesión de prueba gratis.",
     "trialHeadline": "¿Primera vez en Pomona?",
-    "trialBody": "Reserva una sesión de prueba gratuita — sin membresía necesaria.",
-    "bookTrial": "Reservar Prueba Gratis",
+    "trialBody": "Reserva una sesión de prueba gratuita — sin necesidad de suscripción.",
+    "bookTrial": "Reserva tu prueba gratis",
     "spotsLeft": "{{count}} plazas disponibles",
     "waitlist": "Lista de espera",
-    "book": "Reservar",
-    "joinWaitlist": "Unirse a la Lista",
+    "book": "Reserva",
+    "joinWaitlist": "Apúntate a la lista",
     "noClasses": "No hay clases programadas para {{day}}.",
     "openGymNote": "El gimnasio abierto está disponible durante todo el horario de apertura.",
-    "upsellHeadline": "Acceso ilimitado desde €139/mes.",
+    "upsellHeadline": "Acceso ilimitado desde 139 €/mes.",
     "upsellBody": "Olvídate de reservar por sesión. Con Club Plus, cada clase es tuya — ilimitada, reserva prioritaria, acceso total a recuperación incluido.",
-    "compareMemberships": "Comparar Membresías",
+    "compareMemberships": "Compara las suscripciones",
     "days": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
   },
   "journalPage": {
@@ -265,66 +265,66 @@
   "contactPage": {
     "tag": "Contacto y Visita",
     "headline": "Nos encantaría\ndarte la bienvenida.",
-    "body": "Ya sea que estés planificando tu primera visita o tengas una pregunta sobre membresías, estamos aquí para ayudar.",
-    "getInTouch": "Contáctanos",
+    "body": "Ya sea que estés planificando tu primera visita o tengas una pregunta sobre suscripciones, estamos aquí para ayudarte.",
+    "getInTouch": "Escríbenos",
     "sendMessage": "Envíanos un mensaje",
     "name": "Nombre",
     "namePlaceholder": "Tu nombre",
     "email": "Email",
     "emailPlaceholder": "tu@email.com",
     "interest": "Interés",
-    "interestOptions": ["Sesión de prueba", "Consulta de membresía", "Bienestar corporativo", "Consulta general"],
+    "interestOptions": ["Sesión de prueba", "Consulta sobre suscripciones", "Bienestar corporativo", "Consulta general"],
     "message": "Mensaje",
-    "messagePlaceholder": "¿Cómo podemos ayudarte?",
-    "send": "Enviar Mensaje",
+    "messagePlaceholder": "¿En qué podemos ayudarte?",
+    "send": "Enviar mensaje",
     "firstVisitTitle": "Qué esperar en tu primera visita",
     "firstVisitItems": [
       "Llega 10 minutos antes para un tour del club",
-      "Lleva ropa cómoda de entrenamiento",
-      "Toallas, taquillas y duchas proporcionadas",
-      "Disfruta de una bebida de cortesía en el bar después",
-      "Sin compromiso — solo ven y experimenta el club"
+      "Trae ropa cómoda de entrenamiento",
+      "Toallas, taquillas y duchas incluidas",
+      "Disfruta de una bebida de cortesía en el bar",
+      "Sin compromiso — solo ven y vive la experiencia"
     ],
     "faqHeadline": "Preguntas Frecuentes"
   },
   "notFound": {
     "title": "404",
-    "message": "¡Ups! Página no encontrada",
+    "message": "¡Vaya! Página no encontrada",
     "backHome": "Volver al Inicio"
   },
   "membershipPlans": {
-    "essentialsDesc": "Comienza tu camino en Pomona con acceso flexible a clases, el gimnasio y precios exclusivos en el bar.",
-    "essentialsFeatures": ["8 clases grupales al mes", "Acceso a gimnasio abierto (fuera de hora punta)", "Precios de miembro en el healthy bar", "1 sesión de recuperación / mes", "Reservas y horarios por app", "Acceso a taquillas y duchas"],
-    "essentialsFeaturesShort": ["8 clases al mes", "Acceso a gimnasio abierto", "Precios de miembro en el bar", "1 sesión de recuperación / mes", "Reservas por app"],
+    "essentialsDesc": "Empieza tu camino en Pomona con acceso flexible a clases, el gimnasio y precios exclusivos en el bar.",
+    "essentialsFeatures": ["8 clases grupales al mes", "Acceso a gimnasio abierto (fuera de hora punta)", "Precios de socio en el healthy bar", "1 sesión de recuperación / mes", "Reservas y horarios por app", "Acceso a taquillas y duchas"],
+    "essentialsFeaturesShort": ["8 clases al mes", "Acceso a gimnasio abierto", "Precios de socio en el bar", "1 sesión de recuperación / mes", "Reservas por app"],
     "plusDesc": "Entrenamiento ilimitado, acceso total a recuperación y las ventajas que hacen de Pomona un destino diario.",
     "plusFeatures": ["Clases grupales ilimitadas", "Acceso total a gimnasio (todas las horas)", "Acceso a suite de recuperación (sauna, infrarrojo)", "Reserva prioritaria de clases", "2 sesiones de fisioterapia / mes", "Pases de invitado (2/mes)", "Descuentos y ventajas en el healthy bar", "Servicio de taquilla y toalla"],
     "plusFeaturesShort": ["Clases ilimitadas", "Acceso total a gimnasio", "Suite de recuperación", "Reserva prioritaria", "2 sesiones de fisio / mes", "Pases de invitado (2/mes)", "Ventajas en el bar"],
     "signatureDesc": "Todo lo que el club ofrece, con atención personal, recuperación premium y acceso exclusivo a la comunidad.",
-    "signatureFeatures": ["Todo en Club Plus", "Recuperación y sauna ilimitadas", "Consulta nutricional 1-on-1 mensual", "1 sesión de entrenamiento personal / mes", "Acceso prioritario a eventos y talleres", "Eventos exclusivos para miembros Signature", "Servicio de lavandería premium", "Experiencia VIP en el healthy bar"],
+    "signatureFeatures": ["Todo en Club Plus", "Recuperación y sauna ilimitadas", "Consulta nutricional 1-on-1 mensual", "1 sesión de entrenamiento personal / mes", "Acceso prioritario a eventos y talleres", "Eventos exclusivos para socios Signature", "Servicio de lavandería premium", "Experiencia VIP en el healthy bar"],
     "signatureFeaturesShort": ["Todo en Club Plus", "Recuperación y sauna ilimitadas", "Consulta nutricional mensual", "Sesión de entrenamiento personal", "Acceso prioritario a eventos", "Eventos exclusivos", "Servicio de lavandería"]
   },
   "membershipFaqs": [
-    { "q": "¿Puedo probar antes de comprometerme?", "a": "Por supuesto. Ofrecemos una primera sesión gratuita para que experimentes el club, conozcas a nuestros coaches y encuentres la membresía adecuada para ti." },
-    { "q": "¿Puedo pausar o congelar mi membresía?", "a": "Sí. Todas las membresías incluyen una pausa gratuita al año (hasta 30 días). Las pausas adicionales están disponibles por razones médicas o de viaje." },
+    { "q": "¿Puedo probar antes de comprometerme?", "a": "Por supuesto. Ofrecemos una primera sesión gratuita para que vivas el club, conozcas a nuestros coaches y encuentres la suscripción adecuada para ti." },
+    { "q": "¿Puedo pausar o congelar mi suscripción?", "a": "Sí. Todas las suscripciones incluyen una pausa gratuita al año (hasta 30 días). Las pausas adicionales están disponibles por razones médicas o de viaje." },
     { "q": "¿Hay un compromiso mínimo?", "a": "Club Essentials es mes a mes. Club Plus y Signature ofrecen opciones mensuales y anuales, con un 15% de descuento en planes anuales." },
-    { "q": "¿Ofrecen membresías corporativas?", "a": "Sí. Trabajamos con empresas en Madrid para ofrecer paquetes de bienestar para equipos. Contáctanos para una propuesta corporativa personalizada." },
-    { "q": "¿Puedo traer a un amigo?", "a": "Los miembros Club Plus y Signature reciben pases de invitado cada mes. Los pases de día también están disponibles en recepción." },
+    { "q": "¿Ofrecéis suscripciones corporativas?", "a": "Sí. Trabajamos con empresas en Madrid para ofrecer paquetes de bienestar para equipos. Escríbenos para una propuesta corporativa personalizada." },
+    { "q": "¿Puedo traer a un amigo?", "a": "Los socios Club Plus y Signature reciben pases de invitado cada mes. Los pases de día también están disponibles en recepción." },
     { "q": "¿Qué incluye el acceso a recuperación?", "a": "El acceso a la suite de recuperación incluye sauna infrarroja, sauna tradicional, guía de inmersión en frío y acceso al lounge de recuperación. La fisioterapia está disponible como complemento o incluida en niveles superiores." }
   ],
   "contactFaqs": [
     { "q": "¿Qué debo traer para mi primera visita?", "a": "Solo tú y ropa de entrenamiento. Proporcionamos toallas, duchas, taquillas y artículos de aseo. Las botellas de agua están disponibles en el bar." },
-    { "q": "¿Es Pomona Club adecuado para principiantes?", "a": "Absolutamente. Nuestros coaches adaptan cada sesión a tu nivel. Muchos de nuestros miembros más comprometidos empezaron como principiantes completos." },
-    { "q": "¿Necesito una membresía para visitar?", "a": "Puedes reservar una sesión de prueba o comprar un pase de día sin membresía. El healthy bar está abierto para todos." },
-    { "q": "¿Tienen vestuarios y duchas?", "a": "Sí. Tenemos vestuarios amplios con duchas individuales, taquillas, secadores y artículos de aseo premium." },
+    { "q": "¿Es Pomona Club adecuado para principiantes?", "a": "Totalmente. Nuestros coaches adaptan cada sesión a tu nivel. Muchos de nuestros socios más comprometidos empezaron sin experiencia previa." },
+    { "q": "¿Necesito una suscripción para visitaros?", "a": "Puedes reservar una sesión de prueba o comprar un pase de día sin suscripción. El healthy bar está abierto para todos." },
+    { "q": "¿Tenéis vestuarios y duchas?", "a": "Sí. Tenemos vestuarios amplios con duchas individuales, taquillas, secadores y artículos de aseo premium." },
     { "q": "¿Hay aparcamiento cerca?", "a": "Varios parkings privados están a menos de 2 minutos a pie. Metro Serrano (L4) está a 200 metros." },
-    { "q": "¿Puedo reservar una sesión de prueba?", "a": "Sí. Reserva tu primera sesión gratuita a través de nuestra web o contactándonos directamente." }
+    { "q": "¿Puedo reservar una sesión de prueba?", "a": "Sí. Reserva tu primera sesión gratuita a través de nuestra web o escríbenos directamente." }
   ],
   "lang": {
     "en": "EN",
     "es": "ES"
   },
   "articles": {
-    "cta_text": "¿Listo para experimentar Pomona Club por ti mismo?",
+    "cta_text": "¿Quieres vivir la experiencia Pomona Club?",
     "balanced_training_week": {
       "title": "Cómo construir una semana de entrenamiento equilibrada",
       "category": "Entrenamiento",
@@ -333,7 +333,7 @@
       "sections": [
         {
           "heading": "El mito de que más es mejor",
-          "body": "Existe una creencia persistente en la cultura fitness de que el progreso es directamente proporcional al esfuerzo. Entrena más duro, más tiempo, más seguido. Pero la ciencia del ejercicio cuenta una historia diferente. La adaptación ocurre durante la recuperación, no durante el entrenamiento en sí. Cada sesión crea una señal de estrés — tu cuerpo solo se hace más fuerte cuando tiene tiempo y recursos para responder a esa señal. Sin una recuperación adecuada, simplemente acumulas fatiga sin la correspondiente adaptación."
+          "body": "Existe una creencia persistente en la cultura fitness de que el progreso es directamente proporcional al esfuerzo. Entrena más duro, más tiempo, más a menudo. Pero la ciencia del ejercicio cuenta una historia diferente. La adaptación ocurre durante la recuperación, no durante el entrenamiento en sí. Cada sesión crea una señal de estrés — tu cuerpo solo se hace más fuerte cuando tiene tiempo y recursos para responder a esa señal. Sin una recuperación adecuada, simplemente acumulas fatiga sin la correspondiente adaptación."
         },
         {
           "heading": "Los tres sistemas energéticos",
@@ -345,11 +345,11 @@
         },
         {
           "heading": "Periodización para la vida real",
-          "body": "No todas las semanas tienen que ser idénticas. La periodización — alternar entre semanas de mayor y menor intensidad — previene estancamientos y reduce el riesgo de agotamiento. Cada cuatro a seis semanas, considera una semana de descarga: reduce el volumen o la intensidad un 30-40% y enfócate en técnica, movilidad y recuperación. Tu cuerpo te lo agradecerá con un impulso de progreso en las semanas siguientes."
+          "body": "No todas las semanas tienen que ser idénticas. La periodización — alternar entre semanas de mayor y menor intensidad — previene estancamientos y reduce el riesgo de agotamiento. Cada cuatro a seis semanas, plantéate una semana de descarga: reduce el volumen o la intensidad un 30-40% y céntrate en técnica, movilidad y recuperación. Tu cuerpo te lo agradecerá con un impulso de progreso en las semanas siguientes."
         },
         {
           "heading": "El papel de la nutrición y el sueño",
-          "body": "El entrenamiento es solo una pieza del puzzle. Sin una nutrición adecuada — particularmente la ingesta de proteínas y suficientes calorías — tu cuerpo carece de las materias primas para la adaptación. Y el sueño es donde ocurre la magia: liberación de hormona del crecimiento, reparación de tejidos, restauración del sistema nervioso. Una semana de entrenamiento perfectamente diseñada sobre una base de mala nutrición y sueño insuficiente siempre rendirá por debajo de su potencial."
+          "body": "El entrenamiento es solo una pieza del puzle. Sin una nutrición adecuada — especialmente la ingesta de proteínas y suficientes calorías — tu cuerpo carece de las materias primas para la adaptación. Y el sueño es donde ocurre la magia: liberación de hormona del crecimiento, reparación de tejidos, restauración del sistema nervioso. Una semana de entrenamiento perfectamente diseñada sobre una base de mala nutrición y sueño insuficiente siempre rendirá por debajo de su potencial."
         }
       ]
     },
@@ -361,11 +361,11 @@
       "sections": [
         {
           "heading": "Entendiendo el ciclo estrés-recuperación",
-          "body": "Cada sesión de entrenamiento es una dosis controlada de estrés. Tus músculos se desgarran microscópicamente, tu sistema nervioso se fatiga, tus reservas de energía se agotan. Esto es por diseño — es el estímulo que tu cuerpo necesita para adaptarse. Pero la adaptación solo ocurre durante la recuperación. Sin ella, el estrés simplemente se acumula. Por eso existe el síndrome de sobreentrenamiento: no por demasiado entrenamiento, sino por muy poca recuperación relativa a la carga."
+          "body": "Cada sesión de entrenamiento es una dosis controlada de estrés. Tus músculos se desgarran microscópicamente, tu sistema nervioso se fatiga, tus reservas de energía se agotan. Esto es así por diseño — es el estímulo que tu cuerpo necesita para adaptarse. Pero la adaptación solo ocurre durante la recuperación. Sin ella, el estrés simplemente se acumula. Por eso existe el síndrome de sobreentrenamiento: no por demasiado entrenamiento, sino por muy poca recuperación en relación a la carga."
         },
         {
           "heading": "Recuperación activa vs pasiva",
-          "body": "La recuperación no es solo quedarse en el sofá, aunque el descanso ciertamente tiene su lugar. La recuperación activa — movimiento ligero, trabajo de movilidad, estiramientos suaves — aumenta el flujo sanguíneo a los tejidos dañados sin añadir estrés significativo. En Pomona, nuestras sesiones de Pilates y movilidad cumplen este propósito. Mantienen la calidad del movimiento mientras dan un descanso a tus sistemas de alta intensidad."
+          "body": "La recuperación no es solo quedarse en el sofá, aunque el descanso tiene sin duda su lugar. La recuperación activa — movimiento suave, trabajo de movilidad, estiramientos ligeros — aumenta el flujo sanguíneo a los tejidos dañados sin añadir estrés significativo. En Pomona, nuestras sesiones de Pilates y movilidad cumplen este propósito. Mantienen la calidad del movimiento mientras dan un descanso a tus sistemas de alta intensidad."
         },
         {
           "heading": "La ciencia de la terapia de calor",
@@ -373,11 +373,11 @@
         },
         {
           "heading": "La fisioterapia como prevención",
-          "body": "La mayoría de las personas solo ven a un fisioterapeuta cuando algo duele. Pero el uso más efectivo de la fisioterapia es preventivo: identificar compensaciones de movimiento, abordar desequilibrios menores antes de que se conviertan en lesiones, y mantener la calidad de los tejidos mediante terapia manual. Nuestro equipo de fisioterapia trabaja con los miembros de forma proactiva, no solo reactiva."
+          "body": "La mayoría de las personas solo van al fisioterapeuta cuando algo duele. Pero el uso más efectivo de la fisioterapia es preventivo: identificar compensaciones de movimiento, abordar desequilibrios menores antes de que se conviertan en lesiones, y mantener la calidad de los tejidos mediante terapia manual. Nuestro equipo de fisioterapia trabaja con los socios de forma proactiva, no solo reactiva."
         },
         {
-          "heading": "Integrando la recuperación en tu identidad",
-          "body": "La parte más difícil de la recuperación para las personas ambiciosas es el cambio de mentalidad. La recuperación se siente improductiva. Pero los atletas de más alto rendimiento del mundo priorizan la recuperación tan agresivamente como priorizan el entrenamiento. En Pomona Club, hemos diseñado la Suite de Recuperación para que se sienta como una recompensa, no un compromiso. Sauna, terapia manual y un smoothie post-sesión del Healthy Bar — así es una cultura de entrenamiento completa."
+          "heading": "Integrar la recuperación en tu identidad",
+          "body": "Lo más difícil de la recuperación para las personas ambiciosas es el cambio de mentalidad. La recuperación parece improductiva. Pero los atletas de más alto rendimiento del mundo priorizan la recuperación tan en serio como priorizan el entrenamiento. En Pomona Club, hemos diseñado la Suite de Recuperación para que se sienta como una recompensa, no como un sacrificio. Sauna, terapia manual y un smoothie post-sesión del Healthy Bar — así es una cultura de entrenamiento completa."
         }
       ]
     },
@@ -385,55 +385,55 @@
       "title": "Los mejores hábitos nutricionales pre y post entrenamiento",
       "category": "Nutrición",
       "readTime": "6 min de lectura",
-      "intro": "Lo que comes alrededor de tus sesiones de entrenamiento tiene un impacto desproporcionado en tus resultados. No por alguna ventana metabólica mágica, sino porque los hábitos de alimentación consistentes se componen con el tiempo en resultados dramáticamente diferentes. Esto es lo que la evidencia realmente dice — sin trucos, sin suplementos, solo estrategia con comida real.",
+      "intro": "Lo que comes alrededor de tus sesiones de entrenamiento tiene un impacto desproporcionado en tus resultados. No por alguna ventana metabólica mágica, sino porque los hábitos de alimentación consistentes se traducen con el tiempo en resultados radicalmente diferentes. Esto es lo que la evidencia realmente dice — sin trucos, sin suplementos, solo estrategia con comida real.",
       "sections": [
         {
           "heading": "Pre-entreno: alimenta la sesión",
-          "body": "El objetivo de la nutrición pre-entreno es simple: llegar a tu sesión con suficiente energía para rendir bien, sin sentirte pesado. Para la mayoría, una comida equilibrada 2-3 horas antes funciona mejor — algo que combine carbohidratos complejos para energía sostenida, proteína moderada y grasa baja a moderada. Piensa en: avena con frutos rojos y nueces, un bowl de arroz con pollo a la plancha, o un wrap integral con aguacate y huevos."
+          "body": "El objetivo de la nutrición pre-entreno es simple: llegar a tu sesión con suficiente energía para rendir bien, sin sentirte pesado. Para la mayoría, una comida equilibrada 2-3 horas antes funciona mejor — algo que combine hidratos de carbono complejos para energía sostenida, proteína moderada y poca grasa. Por ejemplo: avena con frutos rojos y nueces, un bowl de arroz con pollo a la plancha, o un wrap integral con aguacate y huevos."
         },
         {
           "heading": "La ventana post-entreno: realidad vs mito",
-          "body": "La idea de una ventana anabólica estricta de 30 minutos ha sido desmentida en gran medida por la investigación moderna. Tu cuerpo no detiene la síntesis de proteínas en el momento en que sales del gimnasio. Sin embargo, comer dentro de 1-2 horas después del entrenamiento sigue siendo buena práctica — no por alguna ventana mágica, sino porque probablemente tengas hambre y tus músculos están preparados para la absorción de nutrientes."
+          "body": "La idea de una ventana anabólica estricta de 30 minutos ha sido desmentida en gran medida por la investigación moderna. Tu cuerpo no detiene la síntesis de proteínas en el momento en que sales del gimnasio. Sin embargo, comer dentro de 1-2 horas después del entrenamiento sigue siendo buena práctica — no por ninguna ventana mágica, sino porque probablemente tengas hambre y tus músculos estén preparados para la absorción de nutrientes."
         },
         {
-          "heading": "Proteína: lo no negociable",
-          "body": "Si hay un hábito nutricional con más evidencia para personas activas, es la ingesta adecuada de proteínas. La investigación actual sugiere 1.6-2.2g por kilogramo de peso corporal diario para quienes entrenan regularmente. Esto apoya la síntesis de proteínas musculares, la recuperación e incluso la saciedad. En lugar de obsesionarte con el timing de proteínas, enfócate en la distribución: apunta a 3-5 comidas ricas en proteínas distribuidas a lo largo del día. Nuestro menú del Healthy Bar está diseñado con esto en mente."
+          "heading": "Proteína: lo innegociable",
+          "body": "Si hay un hábito nutricional con más evidencia para personas activas, es la ingesta adecuada de proteínas. La investigación actual sugiere 1,6-2,2 g por kilogramo de peso corporal diario para quienes entrenan regularmente. Esto favorece la síntesis de proteínas musculares, la recuperación e incluso la saciedad. En lugar de obsesionarte con el timing de proteínas, céntrate en la distribución: apunta a 3-5 comidas ricas en proteínas repartidas a lo largo del día. Nuestro menú del Healthy Bar está diseñado con esto en mente."
         },
         {
           "heading": "Hidratación: el factor olvidado",
-          "body": "Incluso una deshidratación leve — tan solo un 2% de pérdida de peso corporal por sudor — puede afectar el rendimiento, reducir la fuerza y ralentizar la función cognitiva. Una buena base es beber 500ml de agua en las dos horas previas al entrenamiento, beber durante la sesión y reponer lo perdido después. Añadir electrolitos — sodio, potasio, magnesio — es beneficioso para sesiones más largas o intensas. Nuestras bebidas funcionales en el Healthy Bar incluyen opciones equilibradas en electrolitos."
+          "body": "Incluso una deshidratación leve — tan solo un 2% de pérdida de peso corporal por sudor — puede afectar el rendimiento, reducir la fuerza y ralentizar la función cognitiva. Una buena base es beber 500 ml de agua en las dos horas previas al entrenamiento, beber durante la sesión y reponer lo perdido después. Añadir electrolitos — sodio, potasio, magnesio — es beneficioso para sesiones más largas o intensas. Nuestras bebidas funcionales en el Healthy Bar incluyen opciones equilibradas en electrolitos."
         },
         {
           "heading": "La simplicidad gana",
-          "body": "La industria fitness adora complicar la nutrición. Suplementos especiales, ratios de macros precisos, protocolos de timing al minuto. Pero la evidencia es clara: la consistencia con lo básico supera la perfección en los detalles. Come suficiente proteína. Come muchas verduras. Mantente hidratado. Programa tus comidas sensatamente alrededor del entrenamiento. Obtén tus micronutrientes de comida real. Eso es el 90% del juego. Empieza simple. Construye desde ahí."
+          "body": "La industria fitness adora complicar la nutrición. Suplementos especiales, ratios de macros precisos, protocolos de timing al minuto. Pero la evidencia es clara: la constancia con lo básico supera la perfección en los detalles. Come suficiente proteína. Come muchas verduras. Mantente hidratado. Programa tus comidas de forma sensata alrededor del entrenamiento. Obtén tus micronutrientes de comida real. Eso es el 90% del juego. Empieza simple. Construye desde ahí."
         }
       ]
     },
     "boutique_fitness_consistency": {
-      "title": "Por qué el fitness boutique funciona mejor para la consistencia",
+      "title": "Por qué el fitness boutique funciona mejor para la constancia",
       "category": "Comunidad",
       "readTime": "4 min de lectura",
-      "intro": "El mayor predictor de resultados en fitness no es el programa, el equipamiento ni siquiera el coach. Es la consistencia. Y la consistencia es donde los entornos boutique superan dramáticamente a los gimnasios convencionales. Así es como espacios más pequeños y orientados a la comunidad como Pomona Club crean hábitos duraderos donde otros modelos fallan.",
+      "intro": "El mayor predictor de resultados en fitness no es el programa, el equipamiento ni siquiera el coach. Es la constancia. Y la constancia es donde los entornos boutique superan con creces a los gimnasios convencionales. Así es como espacios más pequeños y orientados a la comunidad como Pomona Club crean hábitos duraderos donde otros modelos fallan.",
       "sections": [
         {
           "heading": "La responsabilidad de los grupos pequeños",
-          "body": "En un gimnasio comercial grande, eres anónimo. Nadie nota si te saltas una semana. Esta anonimidad se siente liberadora al principio, pero también elimina uno de los impulsores más poderosos del comportamiento consistente: la responsabilidad social. En un entorno boutique, los coaches conocen tu nombre. Notan cuando faltas. Otros miembros se convierten en caras familiares que esperas ver. Esto crea una forma de responsabilidad sutil pero efectiva que mantiene a las personas viniendo incluso en los días en que la motivación es baja."
+          "body": "En un gimnasio comercial grande, eres anónimo. Nadie se da cuenta si te saltas una semana. Esa anonimidad resulta liberadora al principio, pero también elimina uno de los motores más potentes del comportamiento constante: la responsabilidad social. En un entorno boutique, los coaches conocen tu nombre. Se dan cuenta cuando faltas. Otros socios se convierten en caras familiares que esperas ver. Esto crea una forma de responsabilidad sutil pero efectiva que hace que sigas viniendo incluso los días en que la motivación flaquea."
         },
         {
           "heading": "La estructura elimina la fatiga de decisión",
-          "body": "Una de las barreras más subestimadas para la consistencia es la fatiga de decisión. Entrar en un gimnasio con 200 máquinas y sin plan es abrumador. ¿Qué entreno hoy? ¿Cuántas series? ¿Qué peso? Estas micro-decisiones añaden fricción, y la fricción mata los hábitos. El entrenamiento boutique basado en clases elimina esto por completo. Reservas una sesión, te presentas, y un coach cualificado te dice exactamente qué hacer durante los siguientes 45-60 minutos."
+          "body": "Una de las barreras más infravaloradas para la constancia es la fatiga de decisión. Entrar en un gimnasio con 200 máquinas y sin plan es abrumador. ¿Qué entreno hoy? ¿Cuántas series? ¿Qué peso? Esas micro-decisiones añaden fricción, y la fricción mata los hábitos. El entrenamiento boutique basado en clases elimina esto por completo. Reservas una sesión, te presentas y un coach cualificado te dice exactamente qué hacer durante los siguientes 45-60 minutos."
         },
         {
           "heading": "La calidad del coaching importa",
-          "body": "En la mayoría de los gimnasios comerciales, el entrenamiento personal es un añadido caro y el coaching en sala es mínimo. En un entorno boutique como Pomona Club, cada sesión está liderada por un coach. Esto significa que tu técnica está supervisada, tu intensidad es apropiada y tu programa progresa — sin pagar tarifas premium de entrenamiento personal. Esto importa no solo por seguridad y resultados, sino por confianza."
+          "body": "En la mayoría de los gimnasios comerciales, el entrenamiento personal es un añadido caro y el coaching en sala es mínimo. En un entorno boutique como Pomona Club, cada sesión está liderada por un coach. Esto significa que tu técnica está supervisada, tu intensidad es la adecuada y tu programa progresa — sin pagar tarifas premium de entrenamiento personal. Esto importa no solo por seguridad y resultados, sino por confianza."
         },
         {
           "heading": "La comunidad como motor de retención",
-          "body": "Los datos sobre retención en fitness son contundentes: la mayoría de las membresías de gimnasio dejan de usarse en tres meses. Pero los estudios boutique ven tasas de retención dramáticamente más altas. La razón es la comunidad. Cuando tu entorno de entrenamiento es también tu entorno social — cuando tienes amigos allí, cuando forma parte de tu identidad — dejarlo se siente como perder algo significativo. En Pomona Club, el Healthy Bar extiende este efecto: los miembros se quedan después de las sesiones, comparten comidas y construyen relaciones."
+          "body": "Los datos sobre retención en fitness son contundentes: la mayoría de las suscripciones de gimnasio dejan de usarse en tres meses. Pero los estudios boutique registran tasas de retención mucho más altas. La razón es la comunidad. Cuando tu entorno de entrenamiento es también tu entorno social — cuando tienes amigos allí, cuando forma parte de tu identidad — dejarlo se siente como perder algo significativo. En Pomona Club, el Healthy Bar amplifica este efecto: los socios se quedan después de las sesiones, comparten comidas y construyen relaciones."
         },
         {
           "heading": "El entorno moldea el comportamiento",
-          "body": "Los humanos estamos profundamente influenciados por nuestro entorno. Un espacio que se siente premium, limpio, diseñado con intención y acogedor crea una asociación emocional positiva con el entrenamiento. Quieres estar ahí. Compara esto con un gimnasio masificado y mal mantenido. El entorno no es superficial — es un impulsor fundamental de si construirás una relación duradera con el fitness. Cada detalle en Pomona Club está diseñado para que entrenar se sienta como un privilegio, no una obligación."
+          "body": "Los humanos estamos profundamente influenciados por nuestro entorno. Un espacio que se siente premium, cuidado, diseñado con intención y acogedor crea una asociación emocional positiva con el entrenamiento. Te apetece estar ahí. Compara esto con un gimnasio masificado y mal mantenido. El entorno no es superficial — es un motor fundamental de si construirás una relación duradera con el fitness. Cada detalle en Pomona Club está diseñado para que entrenar se sienta como un privilegio, no como una obligación."
         }
       ]
     },
@@ -441,27 +441,27 @@
       "title": "Cómo prepararte para tu primera sesión de HYROX",
       "category": "HYROX",
       "readTime": "5 min de lectura",
-      "intro": "HYROX se ha convertido rápidamente en una de las competiciones fitness más emocionantes de Europa — y llega a Pomona Club. Ya sea que estés pensando en tu primera carrera o simplemente curioso sobre el formato de entrenamiento, aquí tienes todo lo que necesitas saber antes de entrar en una sesión de HYROX.",
+      "intro": "HYROX se ha convertido rápidamente en una de las competiciones fitness más emocionantes de Europa — y llega a Pomona Club. Ya sea que estés pensando en tu primera carrera o simplemente tengas curiosidad por el formato de entrenamiento, aquí tienes todo lo que necesitas saber antes de meterte en una sesión de HYROX.",
       "sections": [
         {
           "heading": "¿Qué es HYROX?",
-          "body": "HYROX es una carrera fitness global que combina 8km de carrera con 8 estaciones de ejercicio funcional. Entre cada kilómetro, completas una estación: ejercicios como SkiErg, empuje de trineo, remo, burpee broad jumps, farmers carry, zancadas con saco de arena y wall balls. Está diseñado para probar el fitness integral — resistencia cardiovascular, resistencia de fuerza, resiliencia mental y capacidad funcional. A diferencia de las competiciones de CrossFit, el formato está estandarizado mundialmente."
+          "body": "HYROX es una carrera fitness global que combina 8 km de carrera con 8 estaciones de ejercicio funcional. Entre cada kilómetro, completas una estación: ejercicios como SkiErg, empuje de trineo, remo, burpee broad jumps, farmers carry, zancadas con saco de arena y wall balls. Está diseñado para poner a prueba el fitness integral — resistencia cardiovascular, resistencia de fuerza, resiliencia mental y capacidad funcional. A diferencia de las competiciones de CrossFit, el formato está estandarizado a nivel mundial."
         },
         {
-          "heading": "No necesitas ser atleta",
-          "body": "Una de las mayores concepciones erróneas sobre HYROX es que solo es para entusiastas del fitness de élite. En realidad, el formato es muy accesible. Los pesos son manejables, el ritmo de carrera lo eliges tú, y las estaciones se basan en movimientos fundamentales que cualquiera puede aprender. En Pomona Club, nuestras sesiones de HYROX están diseñadas para todos los niveles. Los coaches escalan los pesos y la intensidad para que los principiantes puedan desarrollar competencia mientras los atletas experimentados empujan sus límites."
+          "heading": "No hace falta ser atleta",
+          "body": "Uno de los mayores mitos sobre HYROX es que solo es para entusiastas del fitness de élite. En realidad, el formato es muy accesible. Los pesos son manejables, el ritmo de carrera lo decides tú, y las estaciones se basan en movimientos fundamentales que cualquiera puede aprender. En Pomona Club, nuestras sesiones de HYROX están diseñadas para todos los niveles. Los coaches adaptan los pesos y la intensidad para que los principiantes puedan desarrollar competencia mientras los atletas experimentados exprimen sus límites."
         },
         {
           "heading": "Cómo prepararte físicamente",
-          "body": "Si te preparas para tu primera sesión, enfócate en tres áreas: capacidad de carrera (construye una base cómoda de 5km antes de preocuparte por la velocidad), fuerza funcional (practica empujes de trineo, zancadas y carries a pesos moderados) y resistencia de agarre (tu agarre será lo primero en fallar en día de competición). En las semanas previas, añade algo de cardio en zona 2 a tu rutina y practica las estaciones individuales a baja intensidad."
+          "body": "Si te preparas para tu primera sesión, céntrate en tres áreas: capacidad de carrera (construye una base cómoda de 5 km antes de preocuparte por la velocidad), fuerza funcional (practica empujes de trineo, zancadas y carries a pesos moderados) y resistencia de agarre (tu agarre será lo primero en fallar en día de competición). En las semanas previas, añade algo de cardio en zona 2 a tu rutina y practica las estaciones individuales a baja intensidad."
         },
         {
-          "heading": "Qué traer y esperar",
-          "body": "Usa zapatillas de running cómodas con buena amortiguación — esta no es la sesión para zapatillas minimalistas o de halterofilia. Trae una botella de agua y una toalla pequeña. Espera trabajar duro pero en un entorno estructurado y guiado. Una sesión típica de HYROX en Pomona dura 50-60 minutos y simula condiciones de carrera con distancias y pesos modificados. Trabajarás varias estaciones con intervalos de carrera, con coaches guiando tu ritmo y técnica."
+          "heading": "Qué traer y qué esperar",
+          "body": "Usa zapatillas de running cómodas con buena amortiguación — esta no es la sesión para zapatillas minimalistas o de halterofilia. Trae una botella de agua y una toalla pequeña. Espera trabajar duro pero en un entorno estructurado y guiado. Una sesión típica de HYROX en Pomona dura 50-60 minutos y simula condiciones de carrera con distancias y pesos adaptados. Trabajarás varias estaciones con intervalos de carrera, con coaches guiando tu ritmo y técnica."
         },
         {
           "heading": "El juego mental",
-          "body": "HYROX es tanto un desafío mental como físico. La carrera es larga — la mayoría termina en 70-90 minutos — y las transiciones entre carrera y estaciones requieren resets mentales constantes. La mejor preparación es simplemente la exposición: cuanto más practiques el formato, más cómodo te sentirás con las demandas únicas de alternar entre carrera y trabajo funcional. Nuestras sesiones construyen esta resiliencia mental progresivamente."
+          "body": "HYROX es un desafío tanto mental como físico. La carrera es larga — la mayoría termina en 70-90 minutos — y las transiciones entre carrera y estaciones requieren resets mentales constantes. La mejor preparación es simplemente la exposición: cuanto más practiques el formato, más cómodo te sentirás con las exigencias de alternar entre carrera y trabajo funcional. Nuestras sesiones van construyendo esta resiliencia mental de forma progresiva."
         }
       ]
     },
@@ -469,27 +469,27 @@
       "title": "El auge de los clubs de bienestar en Madrid",
       "category": "Estilo de Vida Madrid",
       "readTime": "7 min de lectura",
-      "intro": "Madrid está experimentando una revolución silenciosa en cómo sus residentes abordan el fitness y el bienestar. La era del gimnasio convencional está dando paso a algo más intencional, más integrado y más humano. Bienvenido a la era del club de bienestar — y Pomona Club está a la vanguardia.",
+      "intro": "Madrid está viviendo una revolución silenciosa en cómo sus habitantes abordan el fitness y el bienestar. La era del gimnasio convencional está dando paso a algo más intencional, más integrado y más humano. Bienvenido a la era del club de bienestar — y Pomona Club está a la vanguardia.",
       "sections": [
         {
           "heading": "De gimnasios a destinos de estilo de vida",
-          "body": "Durante décadas, el modelo de gimnasio en Madrid siguió una fórmula predecible: espacios grandes, filas de máquinas, coaching mínimo, precios agresivos. Los miembros eran números, no nombres. Pero una nueva generación de madrileños está demandando algo diferente. Quieren experiencia, no solo equipamiento. Quieren comunidad, no solo metros cuadrados. Quieren un espacio que refleje sus valores: calidad, intencionalidad y un enfoque holístico de la salud."
+          "body": "Durante décadas, el modelo de gimnasio en Madrid siguió una fórmula predecible: espacios grandes, filas de máquinas, coaching mínimo, precios agresivos. Los socios eran números, no nombres. Pero una nueva generación de madrileños está pidiendo algo diferente. Quieren experiencia, no solo equipamiento. Quieren comunidad, no solo metros cuadrados. Quieren un espacio que refleje sus valores: calidad, intencionalidad y un enfoque holístico de la salud."
         },
         {
           "heading": "La integración de entrenamiento, recuperación y nutrición",
-          "body": "Lo que define a un club de bienestar frente a un gimnasio tradicional es la integración. En lugar de entrenar en un lugar, comer en otro y buscar recuperación en otro, un club de bienestar reúne todo bajo un mismo techo. En Pomona Club, puedes completar una sesión de HIIT, pasar 20 minutos en la sauna de infrarrojos y sentarte a comer una comida rica en proteínas en el Healthy Bar — todo sin salir del edificio. Esta integración refleja la comprensión basada en evidencia de que fitness, nutrición y recuperación son componentes inseparables de la salud."
+          "body": "Lo que define a un club de bienestar frente a un gimnasio tradicional es la integración. En lugar de entrenar en un sitio, comer en otro y buscar recuperación en otro, un club de bienestar reúne todo bajo un mismo techo. En Pomona Club, puedes completar una sesión de HIIT, pasar 20 minutos en la sauna de infrarrojos y sentarte a comer un plato rico en proteínas en el Healthy Bar — todo sin salir del edificio. Esta integración refleja la comprensión basada en evidencia de que fitness, nutrición y recuperación son componentes inseparables de la salud."
         },
         {
           "heading": "El elemento social",
-          "body": "Madrid es inherentemente una ciudad social. Su cultura gira alrededor de comidas compartidas, conversaciones en terraza y rituales comunitarios. Los mejores clubs de bienestar de Madrid aprovechan este ADN cultural. Crean espacios donde los smoothies post-entreno se convierten en ocasiones sociales, donde los running clubs terminan en una barra de café, donde el límite entre entrenar y socializar se difumina intencionalmente. Esto no es una distracción del fitness — es un amplificador."
+          "body": "Madrid es por naturaleza una ciudad social. Su cultura gira alrededor de comidas compartidas, conversaciones en terraza y rituales comunitarios. Los mejores clubs de bienestar de Madrid aprovechan este ADN cultural. Crean espacios donde los smoothies post-entreno se convierten en momentos sociales, donde los running clubs terminan en una barra de café, donde el límite entre entrenar y socializar se difumina de forma intencionada. Esto no distrae del fitness — lo potencia."
         },
         {
           "heading": "Calidad sobre cantidad",
-          "body": "El modelo de club de bienestar en Madrid es también una respuesta a la masificación. Cualquiera que haya intentado entrenar en un gimnasio grande de Madrid en hora punta conoce la frustración: colas para el equipamiento, vestuarios abarrotados, servicio impersonal. Los espacios boutique solucionan esto por diseño. Capacidades más pequeñas significan más espacio por miembro, mejores ratios de coaching y una experiencia más tranquila y premium."
+          "body": "El modelo de club de bienestar en Madrid es también una respuesta a la masificación. Cualquiera que haya intentado entrenar en un gimnasio grande de Madrid en hora punta conoce la frustración: colas para el equipamiento, vestuarios abarrotados, servicio impersonal. Los espacios boutique solucionan esto por diseño. Capacidades más reducidas significan más espacio por socio, mejores ratios de coaching y una experiencia más tranquila y premium."
         },
         {
           "heading": "El futuro del bienestar en Madrid",
-          "body": "La tendencia es clara y se acelera. Los madrileños más exigentes — profesionales, emprendedores, creativos, atletas — gravitan hacia espacios que respetan su tiempo, apoyan sus objetivos y se sienten alineados con cómo viven el resto de sus vidas. El club de bienestar no es una tendencia; es una evolución. Representa la maduración de la industria fitness, de vender acceso a crear valor genuino. Pomona Club existe porque creemos que Madrid merece un espacio donde entrenamiento, recuperación, nutrición y comunidad coexistan de forma excepcional."
+          "body": "La tendencia es clara y se acelera. Los madrileños más exigentes — profesionales, emprendedores, creativos, atletas — gravitan hacia espacios que respetan su tiempo, apoyan sus objetivos y encajan con cómo viven el resto de sus vidas. El club de bienestar no es una tendencia pasajera; es una evolución. Representa la maduración de la industria fitness, de vender acceso a crear valor genuino. Pomona Club existe porque creemos que Madrid merece un espacio donde entrenamiento, recuperación, nutrición y comunidad coexistan de forma excepcional."
         }
       ]
     }

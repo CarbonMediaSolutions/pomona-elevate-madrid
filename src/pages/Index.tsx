@@ -20,7 +20,7 @@ const Index = () => {
       <SocialProof />
       <MembershipTeaser />
       <HealthyBarPreview />
-      <TrainersPreview />
+      
       <LocationSection />
       <FinalCTA />
     </Layout>

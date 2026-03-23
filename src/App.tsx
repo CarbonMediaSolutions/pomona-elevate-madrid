@@ -14,7 +14,7 @@ const Classes = lazy(() => import("./pages/Classes"));
 const Recovery = lazy(() => import("./pages/Recovery"));
 const HealthyBar = lazy(() => import("./pages/HealthyBar"));
 const About = lazy(() => import("./pages/About"));
-const Trainers = lazy(() => import("./pages/Trainers"));
+
 const Schedule = lazy(() => import("./pages/Schedule"));
 const Journal = lazy(() => import("./pages/Journal"));
 const JournalArticle = lazy(() => import("./pages/JournalArticle"));

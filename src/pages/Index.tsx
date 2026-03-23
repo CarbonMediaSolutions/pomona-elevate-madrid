@@ -6,7 +6,7 @@ import SignatureExperiences from "@/components/home/SignatureExperiences";
 import SocialProof from "@/components/home/SocialProof";
 import MembershipTeaser from "@/components/home/MembershipTeaser";
 import HealthyBarPreview from "@/components/home/HealthyBarPreview";
-import TrainersPreview from "@/components/home/TrainersPreview";
+
 import LocationSection from "@/components/home/LocationSection";
 import FinalCTA from "@/components/home/FinalCTA";
 
@@ -20,7 +20,7 @@ const Index = () => {
       <SocialProof />
       <MembershipTeaser />
       <HealthyBarPreview />
-      <TrainersPreview />
+      
       <LocationSection />
       <FinalCTA />
     </Layout>

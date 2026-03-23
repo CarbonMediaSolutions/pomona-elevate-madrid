@@ -67,7 +67,7 @@ const Footer = () => {
               <Link to="/recovery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.recoveryWellness")}</Link>
               <Link to="/healthy-bar" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.healthyBar")}</Link>
               <Link to="/schedule" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.scheduleBook")}</Link>
-              <Link to="/trainers" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.ourTrainers")}</Link>
+              
             </nav>
           </div>
 

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const HealthyBarPreview = () => {
   const { t } = useTranslation();
-  const tags = [t("healthyBarSection.smoothies"), t("healthyBarSection.specialtyCoffee"), t("healthyBarSection.proteinBowls"), t("healthyBarSection.functionalDrinks"), t("healthyBarSection.healthySnacks")];
+  const tags = [t("healthyBarSection.smoothies"), t("healthyBarSection.specialtyCoffee"), t("healthyBarSection.saladsAndPokes"), t("healthyBarSection.tostadas"), t("healthyBarSection.healthySnacks")];
 
   return (
     <Section className="bg-secondary/30">

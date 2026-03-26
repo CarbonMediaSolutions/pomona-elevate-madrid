@@ -1,31 +1,36 @@
 
 
-# Phase 1 Updates — Based on Client Feedback
+# Embed Glofox Booking into /schedule Page
 
-From Ana Lucia's email, two key structural changes are needed:
+## What changes
 
-## What needs to change
+Replace the static mock schedule (day tabs, class cards, spots counters) with the live Glofox booking iframe, while keeping the page's premium styling — the PageHero, trial CTA card, and membership upsell section all stay.
 
-### 1. Remove Trainers entirely
-The client explicitly said: *"We don't need a trainers section on the website, as we have different external trainers from Madrid."*
+## Plan
 
-**Files to update:**
-- **`src/App.tsx`** — Remove `/trainers` route and lazy import
-- **`src/pages/Index.tsx`** — Remove `<TrainersPreview />` from homepage
-- **`src/components/layout/Header.tsx`** — Remove "Trainers" from the "The Club" dropdown nav (line 29)
-- **`src/components/layout/Footer.tsx`** — Remove "Our Trainers" link (line 70)
-- **`src/i18n/en.json`** and **`src/i18n/es.json`** — Remove or leave trainer-related keys (no harm leaving them, but cleaner to remove)
-- Files that can be deleted: `src/pages/Trainers.tsx`, `src/components/home/TrainersPreview.tsx`
-- Assets to remove: `trainer-1.jpg`, `trainer-2.jpg`, `trainer-3.jpg`
+### 1. Update `src/pages/Schedule.tsx`
 
-### 2. Wellness & Healthy Bar are already in Phase 1 ✅
-Recovery (`/recovery`) and Healthy Bar (`/healthy-bar`) pages are already fully built and integrated into the homepage, navigation, and footer. **No changes needed here** — they're already prioritized.
+- Remove the static `schedule` array, `activeDay` state, day tabs, and class card list
+- Replace that middle section with the Glofox iframe wrapped in the site's `Section` component with a `card-premium` container and rounded corners + overflow hidden for polish
+- Keep: Layout, PageHero, trial CTA banner, and bottom membership upsell section
+- Remove unused imports (`useState`)
 
----
+The iframe section will look like:
 
-## Summary
+```tsx
+<Section>
+  <div className="card-premium overflow-hidden rounded-xl">
+    <iframe
+      src="https://app.glofox.com/portal/#/branch/660d6658f351bda23f05d487/classes-week-view?header=classes,courses,memberships"
+      frameBorder="0"
+      width="100%"
+      height="1200"
+      title="Book a Class"
+      className="w-full border-0"
+    />
+  </div>
+</Section>
+```
 
-The only real work is **removing all Trainers references** from the site. The Wellness and Healthy Bar sections are already complete and prominent. Everything else in Phase 1 (Home, Classes, Memberships, Contact/Visit, mobile optimization, SEO foundations) is already built.
-
-**Scope:** ~6 files edited, 2 files deleted, 3 asset files removed.
+This keeps the hero, trial banner, iframe booking, and upsell CTA — all wrapped in the site's existing premium styling.
 

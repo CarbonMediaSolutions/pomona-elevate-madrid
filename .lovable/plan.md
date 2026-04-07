@@ -1,44 +1,60 @@
 
 
-# Replace Classes Page Images with Real Pomona Club Photos
+# Rebrand Recovery → Wellness + Real Content & Images
+
+## Overview
+
+Rename the entire "Recovery" section to "Wellness" across the site, replace the generic service list with the three actual Pomona Club wellness services (from the uploaded screenshot), and use the uploaded real photos.
 
 ## Image Mapping
 
-Based on the uploaded photos and the current Pomona Club website screenshot:
+| Uploaded Image | Service |
+|---|---|
+| `sauna.png` | Finnish Sauna (Harvia thermometer/hygrometer) — PageHero + Finnish Sauna card |
+| `sauna_2.png` | Infrared Sauna (woman in red-lit sauna) — Infrared Sauna card |
+| `ducha.png` | Chromotherapy Shower (close-up in red light) — Chromotherapy card |
 
-| Uploaded Image | Class Match | Used In |
-|---|---|---|
-| `hiit.jpg` | HIIT Circuit (stairmaster/cardio machines) | HIIT & Performance card + PageHero |
-| `STRENGTH-1.jpg` | Strength & Conditioning (floor work with dumbbells) | Strength & Conditioning card |
-| `Hirox-1.jpg` | HYROX Training (intense bike/erg work, purple lighting) | HYROX Training card |
-| `pilates.jpg` | Pilates (mat pilates class with weights) | Pilates + Hot Pilates cards |
-| `runing.jpg` | Running Club (group run past Puerta de Alcala) | Running Club card |
-| `abs.jpg` | Abs & Stretching / Mobility & Recovery (mat work) | Mobility & Recovery card |
-| `personal-1.jpg` | Personal Training (coach guiding dumbbell squats) | Not currently a class — see below |
+## Content (from current site screenshot)
 
-## Additional Change: Add Missing Classes
+Replace the 5 generic services with 3 real ones:
 
-The current website shows **Abs & Stretching** and **Personal Training** as class types, but our site doesn't have them. Based on the screenshot and the uploaded images:
+1. **Sauna Finlandesa** — 80°C, deep relaxation ritual, eliminates toxins, releases muscle tension, stimulates immune system. Ideal post-workout for recovery, stress reduction, inner calm.
+2. **Sauna Infrarroja** — 50°C, heat penetrates from within to muscle tissues, accelerates recovery, improves circulation, skin care. Ideal for relieving muscle pain, reducing inflammation.
+3. **Ducha de Cromoterapia** — Thermal contrast + light therapy, cold water activates circulation, tones muscles, provides energy and mental clarity. Colour therapy enhances sensory effect, balances nervous system.
 
-- **Add "Abs & Stretching"** class card (using `abs.jpg`) — category: `mindBody`
-- **Add "Personal Training"** class card (using `personal-1.jpg`) — category: `performance`
-- **Update "Mobility & Recovery"** image from pilates placeholder to `abs.jpg` (or keep abs as its own class and use pilates for recovery)
-
-## Also Update: SignatureExperiences Homepage Component
-
-Replace stock images with the same real photos for HIIT, HYROX, Pilates, Running, and Strength tiles on the homepage.
+Each service gets its own image + two-paragraph description (matching the editorial layout from the screenshot).
 
 ## Files to Change
 
-1. **Copy 7 images** to `src/assets/` — `hiit.jpg`, `STRENGTH-1.jpg`, `Hirox-1.jpg`, `pilates.jpg`, `runing.jpg`, `abs.jpg`, `personal-1.jpg`
-2. **`src/pages/Classes.tsx`** — Update imports to use new images, add Abs & Stretching + Personal Training class entries, update image assignments per mapping above
-3. **`src/components/home/SignatureExperiences.tsx`** — Update image imports to use the new real photos for matching tiles
-4. **`src/i18n/en.json` + `src/i18n/es.json`** — Add translation keys for the two new class types (Abs & Stretching, Personal Training) if needed
+### 1. Copy 3 images to `src/assets/`
+- `sauna.png` → `src/assets/sauna-finnish.png`
+- `sauna_2.png` → `src/assets/sauna-infrared.png`
+- `ducha.png` → `src/assets/chromotherapy.png`
 
-## Class Data Updates
+### 2. `src/pages/Recovery.tsx` → Rename to `src/pages/Wellness.tsx`
+- Replace the card-list layout with an editorial image-text alternating layout (image left + text right, then swap) matching the premium feel of the current site
+- Three services with real descriptions, each with its own imported image
+- Update all i18n keys from `recoveryPage.*` to `wellnessPage.*`
+- Keep bottom CTA section
 
-From the current site screenshot, descriptions for the new classes:
+### 3. `src/App.tsx`
+- Change import from `Recovery` to `Wellness`
+- Change route from `/recovery` to `/wellness`
 
-- **Abs & Stretching**: Targeted core and flexibility work combining abdominal strengthening with guided stretching to improve mobility and body awareness
-- **Personal Training**: One-on-one coaching tailored to your goals — strength, body composition, flexibility, and athletic performance
+### 4. `src/components/layout/Header.tsx`
+- Change nav link href from `/recovery` to `/wellness`
+- Change nav label key from `nav.recovery` to `nav.wellness`
+
+### 5. `src/components/layout/Footer.tsx`
+- Change link href from `/recovery` to `/wellness`
+
+### 6. `src/components/home/ExperiencePillars.tsx`
+- Change pillar link from `/recovery` to `/wellness`
+- Update image to use one of the new sauna images
+
+### 7. `src/i18n/en.json` + `src/i18n/es.json`
+- Rename `nav.recovery` → `nav.wellness` ("Wellness" / "Bienestar")
+- Replace `recoveryPage.*` keys with `wellnessPage.*` keys containing the real service descriptions
+- Update `footer.recoveryWellness` to reflect "Wellness" naming
+- Spanish text taken directly from the current site screenshot (already in Castilian)
 

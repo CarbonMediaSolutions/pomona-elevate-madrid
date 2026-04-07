@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const Memberships = lazy(() => import("./pages/Memberships"));
 const Classes = lazy(() => import("./pages/Classes"));
-const Recovery = lazy(() => import("./pages/Recovery"));
+const Wellness = lazy(() => import("./pages/Wellness"));
 const HealthyBar = lazy(() => import("./pages/HealthyBar"));
 const About = lazy(() => import("./pages/About"));
 
@@ -40,7 +40,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/memberships" element={<Memberships />} />
             <Route path="/classes" element={<Classes />} />
-            <Route path="/recovery" element={<Recovery />} />
+            <Route path="/wellness" element={<Wellness />} />
             <Route path="/healthy-bar" element={<HealthyBar />} />
             <Route path="/about" element={<About />} />
             

@@ -64,7 +64,7 @@ const Footer = () => {
             <h4 className="font-sans text-xs uppercase tracking-[0.15em] font-medium text-foreground mb-5">{t("footer.experience")}</h4>
             <nav className="flex flex-col gap-3">
               <Link to="/classes" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.trainingClasses")}</Link>
-              <Link to="/recovery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.recoveryWellness")}</Link>
+              <Link to="/wellness" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.wellness")}</Link>
               <Link to="/healthy-bar" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.healthyBar")}</Link>
               <Link to="/schedule" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("footer.scheduleBook")}</Link>
               

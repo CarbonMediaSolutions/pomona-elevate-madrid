@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
 import heroImg from "@/assets/hero-gym.jpg";
-import recoveryImg from "@/assets/recovery-room.jpg";
+import saunaImg from "@/assets/sauna-finnish.png";
 import barImg from "@/assets/healthy-bar.jpg";
 import hiitImg from "@/assets/hiit-training.jpg";
 import { useTranslation } from "react-i18next";
@@ -20,8 +20,8 @@ const ExperiencePillars = () => {
     {
       title: t("pillars.recoverTitle"),
       desc: t("pillars.recoverDesc"),
-      image: recoveryImg,
-      link: "/recovery",
+      image: saunaImg,
+      link: "/wellness",
       tags: [t("pillars.recoveryFirst"), t("pillars.scienceBacked")],
     },
     {

@@ -1,11 +1,13 @@
 import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
-import hiitImg from "@/assets/hiit-training.jpg";
-import pilatesImg from "@/assets/pilates-studio.jpg";
-import runningImg from "@/assets/running-club.jpg";
-import openGymImg from "@/assets/open-gym.jpg";
+import hiitImg from "@/assets/hiit-real.jpg";
+import pilatesImg from "@/assets/pilates-real.jpg";
+import runningImg from "@/assets/running-real.jpg";
+import strengthImg from "@/assets/strength-real.jpg";
+import hyroxImg from "@/assets/hyrox-real.jpg";
 import recoveryImg from "@/assets/recovery-room.jpg";
 import barImg from "@/assets/healthy-bar.jpg";
+import personalImg from "@/assets/personal-real.jpg";
 import { useTranslation } from "react-i18next";
 
 const SignatureExperiences = () => {
@@ -13,12 +15,12 @@ const SignatureExperiences = () => {
 
   const experiences = [
     { title: t("signature.hiit"), tag: t("signature.performanceFocused"), image: hiitImg, href: "/classes" },
-    { title: t("signature.hyrox"), tag: t("signature.competitionReady"), image: openGymImg, href: "/classes" },
+    { title: t("signature.hyrox"), tag: t("signature.competitionReady"), image: hyroxImg, href: "/classes" },
     { title: t("signature.pilates"), tag: t("signature.mindBody"), image: pilatesImg, href: "/classes" },
     { title: t("signature.running"), tag: t("pillars.communityEnergy"), image: runningImg, href: "/classes" },
-    { title: t("signature.openGym"), tag: t("signature.trainYourWay"), image: openGymImg, href: "/classes" },
+    { title: t("signature.openGym"), tag: t("signature.trainYourWay"), image: strengthImg, href: "/classes" },
     { title: t("signature.recoverySuite"), tag: t("pillars.recoveryFirst"), image: recoveryImg, href: "/recovery" },
-    { title: t("signature.nutritionPhysio"), tag: t("signature.expertSupport"), image: barImg, href: "/recovery" },
+    { title: t("signature.nutritionPhysio"), tag: t("signature.expertSupport"), image: personalImg, href: "/recovery" },
     { title: t("signature.healthyBar"), tag: t("signature.refuelBeautifully"), image: barImg, href: "/healthy-bar" },
   ];
 

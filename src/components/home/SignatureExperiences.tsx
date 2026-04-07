@@ -5,7 +5,7 @@ import pilatesImg from "@/assets/pilates-real.jpg";
 import runningImg from "@/assets/running-real.jpg";
 import strengthImg from "@/assets/strength-real.jpg";
 import hyroxImg from "@/assets/hyrox-real.jpg";
-import recoveryImg from "@/assets/recovery-room.jpg";
+import saunaImg from "@/assets/sauna-finnish.png";
 import barImg from "@/assets/healthy-bar.jpg";
 import personalImg from "@/assets/personal-real.jpg";
 import { useTranslation } from "react-i18next";
@@ -19,8 +19,8 @@ const SignatureExperiences = () => {
     { title: t("signature.pilates"), tag: t("signature.mindBody"), image: pilatesImg, href: "/classes" },
     { title: t("signature.running"), tag: t("pillars.communityEnergy"), image: runningImg, href: "/classes" },
     { title: t("signature.openGym"), tag: t("signature.trainYourWay"), image: strengthImg, href: "/classes" },
-    { title: t("signature.recoverySuite"), tag: t("pillars.recoveryFirst"), image: recoveryImg, href: "/recovery" },
-    { title: t("signature.nutritionPhysio"), tag: t("signature.expertSupport"), image: personalImg, href: "/recovery" },
+    { title: t("signature.wellnessSuite"), tag: t("signature.wellnessTag"), image: saunaImg, href: "/wellness" },
+    { title: t("signature.nutritionPhysio"), tag: t("signature.expertSupport"), image: personalImg, href: "/wellness" },
     { title: t("signature.healthyBar"), tag: t("signature.refuelBeautifully"), image: barImg, href: "/healthy-bar" },
   ];
 

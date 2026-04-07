@@ -18,7 +18,7 @@ const Header = () => {
       label: t("nav.experience"),
       children: [
         { label: t("nav.training"), href: "/classes" },
-        { label: t("nav.recovery"), href: "/recovery" },
+        { label: t("nav.wellness"), href: "/wellness" },
         { label: t("nav.healthyBar"), href: "/healthy-bar" },
       ],
     },

@@ -13,7 +13,7 @@ const ExperiencePillars = () => {
     {
       title: t("pillars.trainTitle"),
       desc: t("pillars.trainDesc"),
-      image: hiitImg,
+      image: trainImg,
       link: "/classes",
       tags: [t("pillars.coachLed"), t("pillars.smallGroup")],
     },
@@ -34,7 +34,7 @@ const ExperiencePillars = () => {
     {
       title: t("pillars.belongTitle"),
       desc: t("pillars.belongDesc"),
-      image: heroImg,
+      image: belongImg,
       link: "/about",
       tags: [t("pillars.communityEnergy"), t("pillars.lifestyle")],
     },

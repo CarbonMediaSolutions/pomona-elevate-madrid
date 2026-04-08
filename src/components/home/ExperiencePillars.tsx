@@ -1,9 +1,9 @@
 import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero-gym.jpg";
 import saunaImg from "@/assets/sauna-finnish.png";
-import barImg from "@/assets/healthy-bar.jpg";
-import hiitImg from "@/assets/hiit-training.jpg";
+import trainImg from "@/assets/pillar-train.png";
+import barImg from "@/assets/pillar-bar.png";
+import belongImg from "@/assets/pillar-belong.png";
 import { useTranslation } from "react-i18next";
 
 const ExperiencePillars = () => {

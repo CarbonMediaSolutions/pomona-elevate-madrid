@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import barImg from "@/assets/healthy-bar.jpg";
+import barImg from "@/assets/healthy-bar-bowl.png";
 import { useTranslation } from "react-i18next";
 
 const HealthyBarPreview = () => {

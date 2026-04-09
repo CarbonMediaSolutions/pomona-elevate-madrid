@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
@@ -17,11 +17,11 @@ import {
   ChevronUp,
   ChevronDown,
   Trash2,
-  Loader2,
   Sparkles,
   ArrowRight,
   ArrowLeft,
 } from "lucide-react";
+import { Progress } from "@/components/ui/progress";
 
 interface Section {
   section_type: string;
@@ -55,6 +55,9 @@ export default function CreatePageWizard({
   const [sections, setSections] = useState<Section[]>([]);
   const [loading, setLoading] = useState(false);
   const [creating, setCreating] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [progressMessage, setProgressMessage] = useState("");
+  const progressRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const { data: existingSlugs = [] } = useQuery({
     queryKey: ["all-page-slugs"],
@@ -77,17 +80,51 @@ export default function CreatePageWizard({
 
   const slugValid = slug.length > 0 && !existingSlugs.includes(slug);
 
+  const PROGRESS_PHASES = [
+    { at: 0, msg: "Analyzing your description..." },
+    { at: 25, msg: "Selecting section types..." },
+    { at: 50, msg: "Generating content..." },
+    { at: 75, msg: "Finalizing layout..." },
+  ];
+
+  const startProgress = () => {
+    setProgress(0);
+    setProgressMessage(PROGRESS_PHASES[0].msg);
+    let current = 0;
+    progressRef.current = setInterval(() => {
+      current = Math.min(current + 12, 90);
+      setProgress(current);
+      const phase = [...PROGRESS_PHASES].reverse().find((p) => current >= p.at);
+      if (phase) setProgressMessage(phase.msg);
+    }, 2000);
+  };
+
+  const stopProgress = () => {
+    if (progressRef.current) {
+      clearInterval(progressRef.current);
+      progressRef.current = null;
+    }
+  };
+
+  useEffect(() => () => stopProgress(), []);
+
   const generateLayout = async () => {
     setLoading(true);
+    startProgress();
     try {
       const { data, error } = await supabase.functions.invoke("ai-page-gen", {
         body: { description },
       });
       if (error) throw error;
       if (data?.error) throw new Error(data.error);
+      stopProgress();
+      setProgress(100);
+      setProgressMessage("Done!");
       setSections(data.sections ?? []);
-      setStep(4);
+      setTimeout(() => setStep(4), 600);
     } catch (e: any) {
+      stopProgress();
+      setStep(2);
       toast.error(e.message || "Failed to generate layout");
     } finally {
       setLoading(false);
@@ -223,9 +260,15 @@ export default function CreatePageWizard({
         )}
 
         {step === 3 && (
-          <div className="flex flex-col items-center py-8 gap-4">
-            <Loader2 className="w-8 h-8 animate-spin text-gray-400" />
-            <p className="text-sm text-gray-500">AI is designing your page layout...</p>
+          <div className="flex flex-col items-center py-8 gap-5">
+            <div className="w-full space-y-2">
+              <Progress value={progress} className="h-2" />
+              <div className="flex justify-between text-xs text-gray-400">
+                <span>{progressMessage}</span>
+                <span>{Math.round(progress)}%</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-500 animate-pulse">{progressMessage}</p>
           </div>
         )}
 
@@ -260,7 +303,7 @@ export default function CreatePageWizard({
                 <ArrowLeft className="w-4 h-4 mr-1" /> Back
               </Button>
               <Button onClick={createPage} disabled={creating || sections.length === 0} className="flex-1">
-                {creating ? <Loader2 className="w-4 h-4 animate-spin mr-1" /> : null}
+                {creating ? <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-1 inline-block" /> : null}
                 Create Page
               </Button>
             </div>

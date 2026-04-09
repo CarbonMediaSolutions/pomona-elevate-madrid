@@ -30,6 +30,7 @@ const Header = () => {
         { label: t("nav.about"), href: "/about" },
       ],
     },
+    { label: "Costa Brava 2026", href: "/costa-brava-2026" },
     { label: t("nav.journal"), href: "/journal" },
     { label: t("nav.contact"), href: "/contact" },
   ];

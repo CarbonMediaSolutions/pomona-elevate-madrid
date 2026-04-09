@@ -9,6 +9,7 @@ import recoveryImg from "@/assets/recovery-room.jpg";
 import pilatesImg from "@/assets/pilates-studio.jpg";
 import openGymImg from "@/assets/open-gym.jpg";
 import { useTranslation } from "react-i18next";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const articles = [
   { slug: "balanced-training-week", key: "balanced_training_week", image: hiitImg },
@@ -21,14 +22,15 @@ const articles = [
 
 const Journal = () => {
   const { t } = useTranslation();
+  const cmsHero = useCmsSection("journal", "hero");
 
   return (
     <Layout>
       <PageHero
         image={pilatesImg}
-        tag={t("journalPage.tag")}
-        headline={t("journalPage.headline")}
-        body={t("journalPage.body")}
+        tag={(cmsHero?.tag as string) || t("journalPage.tag")}
+        headline={(cmsHero?.headline as string) || t("journalPage.headline")}
+        body={(cmsHero?.body as string) || t("journalPage.body")}
       />
 
       <Section>

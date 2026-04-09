@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import barImg from "@/assets/healthy-bar.jpg";
 import { useTranslation } from "react-i18next";
 import { ExternalLink } from "lucide-react";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const juices = {
   beHealthy: [
@@ -127,13 +128,15 @@ const HealthyBar = () => {
     <h3 className="text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4 mt-8 first:mt-0">{label}</h3>
   );
 
+  const cmsHero = useCmsSection("healthy-bar", "hero");
+
   return (
     <Layout>
       <PageHero
         image={barImg}
-        tag={t("healthyBarSection.tag")}
-        headline={t("healthyBarPage.headline")}
-        body={t("healthyBarPage.body")}
+        tag={(cmsHero?.tag as string) || t("healthyBarSection.tag")}
+        headline={(cmsHero?.headline as string) || t("healthyBarPage.headline")}
+        body={(cmsHero?.body as string) || t("healthyBarPage.body")}
       />
 
       {/* Intro + Instagram */}

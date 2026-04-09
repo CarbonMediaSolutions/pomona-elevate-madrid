@@ -21,6 +21,14 @@ const Journal = lazy(() => import("./pages/Journal"));
 const JournalArticle = lazy(() => import("./pages/JournalArticle"));
 const Contact = lazy(() => import("./pages/Contact"));
 
+// Admin
+const AdminLogin = lazy(() => import("./pages/admin/AdminLogin"));
+const AdminLayout = lazy(() => import("./components/admin/AdminLayout"));
+const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard"));
+const AdminPageEditor = lazy(() => import("./pages/admin/AdminPageEditor"));
+const AdminMedia = lazy(() => import("./pages/admin/AdminMedia"));
+const AdminSettings = lazy(() => import("./pages/admin/AdminSettings"));
+
 const queryClient = new QueryClient();
 
 const PageLoader = () => (

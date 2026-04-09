@@ -162,7 +162,7 @@ export default function CreatePageWizard({
         onOpenChange(v);
       }}
     >
-      <DialogContent className="max-w-lg bg-white text-gray-900">
+      <DialogContent className="max-w-lg bg-white text-gray-900 [&_input]:bg-white [&_input]:text-gray-900 [&_input]:border-gray-300 [&_textarea]:bg-white [&_textarea]:text-gray-900 [&_textarea]:border-gray-300 [&_input::placeholder]:text-gray-400 [&_textarea::placeholder]:text-gray-400">
         <DialogHeader>
           <DialogTitle>
             {step === 1 && "Create New Page"}

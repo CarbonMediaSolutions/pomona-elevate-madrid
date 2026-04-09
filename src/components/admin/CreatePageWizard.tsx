@@ -17,11 +17,11 @@ import {
   ChevronUp,
   ChevronDown,
   Trash2,
-  Loader2,
   Sparkles,
   ArrowRight,
   ArrowLeft,
 } from "lucide-react";
+import { Progress } from "@/components/ui/progress";
 
 interface Section {
   section_type: string;

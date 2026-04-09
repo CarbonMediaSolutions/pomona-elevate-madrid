@@ -3,6 +3,7 @@ import { Star, Quote } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const useAnimatedCounter = (end: number, duration: number = 1.5, inView: boolean = false) => {
   const [count, setCount] = useState(0);
@@ -30,18 +31,22 @@ const useAnimatedCounter = (end: number, duration: number = 1.5, inView: boolean
 
 const SocialProof = () => {
   const { t } = useTranslation();
+  const cms = useCmsSection("home", "social-proof");
   const [active, setActive] = useState(0);
   const statsRef = useRef(null);
   const statsInView = useInView(statsRef, { once: true, margin: "-80px" });
 
-  const testimonials = t("social.testimonials", { returnObjects: true }) as { name: string; role: string; quote: string }[];
+  const tag = (cms?.tag as string) || t("social.tag");
+  const headline = (cms?.headline as string) || t("social.headline");
+
+  const testimonials = (cms?.testimonials as { name: string; role: string; quote: string }[]) ||
+    (t("social.testimonials", { returnObjects: true }) as { name: string; role: string; quote: string }[]);
 
   const memberCount = useAnimatedCounter(2500, 1.5, statsInView);
   const classCount = useAnimatedCounter(40, 1.2, statsInView);
   const coachCount = useAnimatedCounter(12, 1, statsInView);
   const ratingWhole = useAnimatedCounter(4, 1, statsInView);
 
-  // Auto-rotate testimonials
   useEffect(() => {
     if (!Array.isArray(testimonials) || testimonials.length === 0) return;
     const interval = setInterval(() => {
@@ -51,10 +56,10 @@ const SocialProof = () => {
   }, [testimonials]);
 
   const stats = [
-    { value: `${memberCount.toLocaleString()}+`, label: t("social.activeMembers") },
-    { value: `${classCount}+`, label: t("social.weeklyClasses") },
-    { value: `${coachCount}`, label: t("social.expertCoaches") },
-    { value: `${ratingWhole}.9`, label: t("social.averageRating") },
+    { value: `${memberCount.toLocaleString()}+`, label: (cms?.activeMembersLabel as string) || t("social.activeMembers") },
+    { value: `${classCount}+`, label: (cms?.weeklyClassesLabel as string) || t("social.weeklyClasses") },
+    { value: `${coachCount}`, label: (cms?.expertCoachesLabel as string) || t("social.expertCoaches") },
+    { value: `${ratingWhole}.9`, label: (cms?.averageRatingLabel as string) || t("social.averageRating") },
   ];
 
   if (!Array.isArray(testimonials)) return null;
@@ -62,8 +67,8 @@ const SocialProof = () => {
   return (
     <Section className="bg-secondary/30">
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="pill-tag mb-6 inline-block">{t("social.tag")}</span>
-        <h2 className="text-editorial-lg text-foreground whitespace-pre-line">{t("social.headline")}</h2>
+        <span className="pill-tag mb-6 inline-block">{tag}</span>
+        <h2 className="text-editorial-lg text-foreground whitespace-pre-line">{headline}</h2>
       </div>
 
       <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
@@ -79,13 +84,7 @@ const SocialProof = () => {
         <div className="card-premium p-8 lg:p-12 text-center relative overflow-hidden min-h-[280px] flex flex-col items-center justify-center">
           <Quote className="w-8 h-8 text-primary/30 mx-auto mb-6" />
           <AnimatePresence mode="wait">
-            <motion.div
-              key={active}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-            >
+            <motion.div key={active} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.4, ease: "easeInOut" }}>
               <p className="font-serif text-xl lg:text-2xl text-foreground leading-relaxed italic">
                 "{testimonials[active]?.quote}"
               </p>

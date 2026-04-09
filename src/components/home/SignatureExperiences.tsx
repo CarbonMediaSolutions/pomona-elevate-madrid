@@ -9,9 +9,15 @@ import saunaImg from "@/assets/sauna-finnish.png";
 import barImg from "@/assets/healthy-bar.jpg";
 import personalImg from "@/assets/personal-real.jpg";
 import { useTranslation } from "react-i18next";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const SignatureExperiences = () => {
   const { t } = useTranslation();
+  const cms = useCmsSection("home", "signature-experiences");
+
+  const tag = (cms?.tag as string) || t("signature.tag");
+  const headline = (cms?.headline as string) || t("signature.headline");
+  const body = (cms?.body as string) || t("signature.body");
 
   const experiences = [
     { title: t("signature.hiit"), tag: t("signature.performanceFocused"), image: hiitImg, href: "/classes" },
@@ -27,11 +33,10 @@ const SignatureExperiences = () => {
   return (
     <Section>
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="pill-tag mb-6 inline-block">{t("signature.tag")}</span>
-        <h2 className="text-editorial-lg text-foreground">{t("signature.headline")}</h2>
-        <p className="text-body-lg mt-4">{t("signature.body")}</p>
+        <span className="pill-tag mb-6 inline-block">{tag}</span>
+        <h2 className="text-editorial-lg text-foreground">{headline}</h2>
+        <p className="text-body-lg mt-4">{body}</p>
       </div>
-
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {experiences.map((exp) => (
           <Link key={exp.title} to={exp.href} className="group relative overflow-hidden rounded-lg aspect-[3/4] card-premium">

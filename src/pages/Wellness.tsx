@@ -7,6 +7,7 @@ import saunaFinnish from "@/assets/sauna-finnish.png";
 import saunaInfrared from "@/assets/sauna-infrared.png";
 import chromotherapy from "@/assets/chromotherapy.png";
 import { useTranslation } from "react-i18next";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const services = [
   { key: "finnish", image: saunaFinnish },
@@ -16,44 +17,40 @@ const services = [
 
 const Wellness = () => {
   const { t } = useTranslation();
+  const cmsHero = useCmsSection("wellness", "hero");
+  const cmsServices = useCmsSection("wellness", "services");
+  const cmsCta = useCmsSection("wellness", "cta");
 
   return (
     <Layout>
       <PageHero
         image={saunaFinnish}
-        tag={t("wellnessPage.tag")}
-        headline={t("wellnessPage.headline")}
-        body={t("wellnessPage.body")}
+        tag={(cmsHero?.tag as string) || t("wellnessPage.tag")}
+        headline={(cmsHero?.headline as string) || t("wellnessPage.headline")}
+        body={(cmsHero?.body as string) || t("wellnessPage.body")}
       />
 
       <Section>
         <div className="flex flex-col gap-20 lg:gap-28">
           {services.map((s, i) => {
             const isReversed = i % 2 !== 0;
+            const svcCms = cmsServices?.services?.[i] as Record<string, any> | undefined;
             return (
-              <div
-                key={s.key}
-                className={`flex flex-col ${isReversed ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 lg:gap-16 items-center`}
-              >
+              <div key={s.key} className={`flex flex-col ${isReversed ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 lg:gap-16 items-center`}>
                 <div className="w-full lg:w-1/2">
                   <div className="card-premium overflow-hidden rounded-xl">
-                    <img
-                      src={s.image}
-                      alt={t(`wellnessPage.${s.key}Title`)}
-                      className="w-full h-[300px] lg:h-[420px] object-cover"
-                      loading="lazy"
-                    />
+                    <img src={s.image} alt={(svcCms?.title as string) || t(`wellnessPage.${s.key}Title`)} className="w-full h-[300px] lg:h-[420px] object-cover" loading="lazy" />
                   </div>
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
                   <h2 className="font-serif text-2xl lg:text-3xl text-foreground mb-4">
-                    {t(`wellnessPage.${s.key}Title`)}
+                    {(svcCms?.title as string) || t(`wellnessPage.${s.key}Title`)}
                   </h2>
                   <p className="text-body mb-4">
-                    {t(`wellnessPage.${s.key}Desc1`)}
+                    {(svcCms?.desc1 as string) || t(`wellnessPage.${s.key}Desc1`)}
                   </p>
                   <p className="text-body">
-                    {t(`wellnessPage.${s.key}Desc2`)}
+                    {(svcCms?.desc2 as string) || t(`wellnessPage.${s.key}Desc2`)}
                   </p>
                 </div>
               </div>
@@ -64,11 +61,11 @@ const Wellness = () => {
 
       <Section className="bg-secondary/30">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-editorial-md text-foreground">{t("wellnessPage.ctaHeadline")}</h2>
-          <p className="text-body-lg mt-4">{t("wellnessPage.ctaBody")}</p>
+          <h2 className="text-editorial-md text-foreground">{(cmsCta?.headline as string) || t("wellnessPage.ctaHeadline")}</h2>
+          <p className="text-body-lg mt-4">{(cmsCta?.body as string) || t("wellnessPage.ctaBody")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Link to="/memberships"><Button variant="hero" size="lg">{t("wellnessPage.viewMemberships")}</Button></Link>
-            <Link to="/schedule"><Button variant="hero-outline" size="lg">{t("wellnessPage.bookSession")}</Button></Link>
+            <Link to="/memberships"><Button variant="hero" size="lg">{(cmsCta?.viewMemberships as string) || t("wellnessPage.viewMemberships")}</Button></Link>
+            <Link to="/schedule"><Button variant="hero-outline" size="lg">{(cmsCta?.bookSession as string) || t("wellnessPage.bookSession")}</Button></Link>
           </div>
         </div>
       </Section>

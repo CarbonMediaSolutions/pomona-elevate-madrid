@@ -12,6 +12,7 @@ import runningImg from "@/assets/running-real.jpg";
 import absImg from "@/assets/abs-real.jpg";
 import personalImg from "@/assets/personal-real.jpg";
 import { useTranslation } from "react-i18next";
+import { useCmsSection } from "@/hooks/useCmsContent";
 
 const classTypes = [
   { name: "HIIT & Performance", description: "High-intensity interval training designed to build cardiovascular endurance, explosive power, and mental resilience. Every session is coach-led, structured, and scalable to your level.", intensity: "High", duration: "45 min", idealFor: "Athletes, fitness enthusiasts, and anyone seeking measurable performance gains", benefits: ["Burn efficiently", "Build power", "Improve VO2 max", "Mental toughness"], coaches: "Marco Delgado, Andrés Ruiz", image: hiitImg, tags: ["Coach-led", "Small group", "Performance-focused"], category: "performance" },
@@ -27,6 +28,7 @@ const classTypes = [
 
 const Classes = () => {
   const { t } = useTranslation();
+  const cmsHero = useCmsSection("classes", "hero");
   const [activeFilter, setActiveFilter] = useState("all");
 
   const filters = [
@@ -43,9 +45,9 @@ const Classes = () => {
     <Layout>
       <PageHero
         image={hiitImg}
-        tag={t("classesPage.tag")}
-        headline={t("classesPage.headline")}
-        body={t("classesPage.body")}
+        tag={(cmsHero?.tag as string) || t("classesPage.tag")}
+        headline={(cmsHero?.headline as string) || t("classesPage.headline")}
+        body={(cmsHero?.body as string) || t("classesPage.body")}
       />
 
       <div className="section-container my-12">
@@ -64,7 +66,7 @@ const Classes = () => {
                 <div className="lg:col-span-2 relative h-64 lg:h-auto overflow-hidden">
                   <img src={cls.image} alt={cls.name} className="w-full h-full object-cover" loading="lazy" />
                   <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
-                    {cls.tags.map((tag) => (<span key={tag} className="pill-tag text-[10px] bg-background/50 backdrop-blur-sm border-foreground/10">{tag}</span>))}
+                    {cls.tags.map((ctag) => (<span key={ctag} className="pill-tag text-[10px] bg-background/50 backdrop-blur-sm border-foreground/10">{ctag}</span>))}
                   </div>
                 </div>
                 <div className="lg:col-span-3 p-6 lg:p-8 flex flex-col">

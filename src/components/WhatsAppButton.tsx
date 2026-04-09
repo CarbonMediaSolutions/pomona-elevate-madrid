@@ -1,7 +1,14 @@
+import { useSiteSettings } from "@/hooks/usePageContent";
+
 const WhatsAppButton = () => {
+  const { data: settings } = useSiteSettings();
+  const whatsappNumber = settings?.whatsapp_number || "34639810887";
+  const whatsappMessage = settings?.whatsapp_message || "Hola!";
+  const href = `https://api.whatsapp.com/send/?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}&type=phone_number&app_absent=0`;
+
   return (
     <a
-      href="https://api.whatsapp.com/send/?phone=34639810887&text=Hola%21&type=phone_number&app_absent=0"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"

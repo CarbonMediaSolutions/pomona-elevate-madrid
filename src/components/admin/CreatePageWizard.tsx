@@ -80,17 +80,51 @@ export default function CreatePageWizard({
 
   const slugValid = slug.length > 0 && !existingSlugs.includes(slug);
 
+  const PROGRESS_PHASES = [
+    { at: 0, msg: "Analyzing your description..." },
+    { at: 25, msg: "Selecting section types..." },
+    { at: 50, msg: "Generating content..." },
+    { at: 75, msg: "Finalizing layout..." },
+  ];
+
+  const startProgress = () => {
+    setProgress(0);
+    setProgressMessage(PROGRESS_PHASES[0].msg);
+    let current = 0;
+    progressRef.current = setInterval(() => {
+      current = Math.min(current + 12, 90);
+      setProgress(current);
+      const phase = [...PROGRESS_PHASES].reverse().find((p) => current >= p.at);
+      if (phase) setProgressMessage(phase.msg);
+    }, 2000);
+  };
+
+  const stopProgress = () => {
+    if (progressRef.current) {
+      clearInterval(progressRef.current);
+      progressRef.current = null;
+    }
+  };
+
+  useEffect(() => () => stopProgress(), []);
+
   const generateLayout = async () => {
     setLoading(true);
+    startProgress();
     try {
       const { data, error } = await supabase.functions.invoke("ai-page-gen", {
         body: { description },
       });
       if (error) throw error;
       if (data?.error) throw new Error(data.error);
+      stopProgress();
+      setProgress(100);
+      setProgressMessage("Done!");
       setSections(data.sections ?? []);
-      setStep(4);
+      setTimeout(() => setStep(4), 600);
     } catch (e: any) {
+      stopProgress();
+      setStep(2);
       toast.error(e.message || "Failed to generate layout");
     } finally {
       setLoading(false);

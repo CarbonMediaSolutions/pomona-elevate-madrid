@@ -1,25 +1,32 @@
 
 
-# Fix AI Page Creator — Readability Issues
+# Add Progress Tracker to AI Page Generation Step
 
-## Issues Found
+## Problem
+Step 3 (AI layout generation) shows only a static spinner with no sense of progress, making long waits feel indefinite.
 
-1. **Admin page editor inputs** — All input/textarea fields on `/admin/pages/{slug}` inherit the site's dark theme (`bg-background` = near-black). The AI-generated text is dark on dark, invisible.
-2. **Frontend dynamic sections** — The `SectionRenderer` components for cards-grid, testimonials, and CTA banner render content that's barely visible because text blends into the dark background.
+## Solution
+Add a simulated multi-phase progress tracker that cycles through descriptive status messages with a progress bar. Since the edge function call is a single async request (no real intermediate progress), we simulate phases that give the user confidence something is happening.
 
-## Fixes
+## Progress Phases
+1. "Analyzing your description..." (0–25%)
+2. "Selecting section types..." (25–50%)
+3. "Generating content..." (50–75%)
+4. "Finalizing layout..." (75–90%)
+5. Completes to 100% when the response arrives
 
-### 1. Admin Page Editor — `src/pages/admin/AdminPageEditor.tsx`
-Add explicit light-theme overrides to all input, textarea, and select elements in the editor. Apply `bg-white text-gray-900 border-gray-300` classes to the editor container or individual form fields, same pattern used in the CreatePageWizard fix.
+## Implementation
 
-### 2. Frontend Section Renderers — `src/components/dynamic/SectionRenderer.tsx`
-Review each section renderer (cards-grid, testimonials, cta-banner, text-image, gallery) and ensure:
-- Cards use `card-premium` class with proper text colors (`text-foreground`)
-- Testimonial quotes have visible text (cream/white on dark)
-- CTA banner text and buttons are visible
-- Headings use `text-editorial-lg` or similar with proper contrast
+### File: `src/components/admin/CreatePageWizard.tsx`
 
-### Files Changed
-- `src/pages/admin/AdminPageEditor.tsx` — add light-theme input styling
-- `src/components/dynamic/SectionRenderer.tsx` — fix text visibility in all section types
+- Add two state variables: `progress` (number 0–100) and `progressMessage` (string)
+- When entering step 3, start an interval timer that advances `progress` by ~12% every 2 seconds and cycles through the phase messages above, capping at 90%
+- When `generateLayout()` completes successfully, set progress to 100% briefly before advancing to step 4
+- Clear the interval on completion or error
+- Replace the current step 3 UI (just a spinner + single line) with:
+  - The current phase message (animated text)
+  - A `Progress` bar component (from shadcn/ui) showing the percentage
+  - A subtle percentage label
+
+Uses the existing `src/components/ui/progress.tsx` component — no new dependencies.
 

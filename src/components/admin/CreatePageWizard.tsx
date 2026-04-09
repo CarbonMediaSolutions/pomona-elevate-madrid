@@ -260,9 +260,15 @@ export default function CreatePageWizard({
         )}
 
         {step === 3 && (
-          <div className="flex flex-col items-center py-8 gap-4">
-            <Loader2 className="w-8 h-8 animate-spin text-gray-400" />
-            <p className="text-sm text-gray-500">AI is designing your page layout...</p>
+          <div className="flex flex-col items-center py-8 gap-5">
+            <div className="w-full space-y-2">
+              <Progress value={progress} className="h-2" />
+              <div className="flex justify-between text-xs text-gray-400">
+                <span>{progressMessage}</span>
+                <span>{Math.round(progress)}%</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-500 animate-pulse">{progressMessage}</p>
           </div>
         )}
 

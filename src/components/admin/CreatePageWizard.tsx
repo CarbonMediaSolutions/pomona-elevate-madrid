@@ -55,6 +55,9 @@ export default function CreatePageWizard({
   const [sections, setSections] = useState<Section[]>([]);
   const [loading, setLoading] = useState(false);
   const [creating, setCreating] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [progressMessage, setProgressMessage] = useState("");
+  const progressRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const { data: existingSlugs = [] } = useQuery({
     queryKey: ["all-page-slugs"],

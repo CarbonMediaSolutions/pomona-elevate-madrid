@@ -28,6 +28,7 @@ const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard"));
 const AdminPageEditor = lazy(() => import("./pages/admin/AdminPageEditor"));
 const AdminMedia = lazy(() => import("./pages/admin/AdminMedia"));
 const AdminSettings = lazy(() => import("./pages/admin/AdminSettings"));
+const DynamicPage = lazy(() => import("./pages/DynamicPage"));
 
 const queryClient = new QueryClient();
 
@@ -65,6 +66,7 @@ const App = () => (
               <Route path="media" element={<AdminMedia />} />
               <Route path="settings" element={<AdminSettings />} />
             </Route>
+            <Route path="/:slug" element={<DynamicPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

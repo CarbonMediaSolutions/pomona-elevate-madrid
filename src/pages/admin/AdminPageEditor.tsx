@@ -311,17 +311,17 @@ function SectionContentEditor({
     <div key={key}>
       <label className="block text-xs font-medium text-gray-500 mb-1">{label}</label>
       {multiline ? (
-        <Textarea
+         <Textarea
           value={local[key] ?? ""}
           onChange={(e) => set(key, e.target.value)}
-          className="border-gray-200"
+          className="bg-white text-gray-900 border-gray-300 placeholder:text-gray-400"
           rows={3}
         />
       ) : (
-        <Input
+         <Input
           value={local[key] ?? ""}
           onChange={(e) => set(key, e.target.value)}
-          className="border-gray-200"
+          className="bg-white text-gray-900 border-gray-300 placeholder:text-gray-400"
         />
       )}
     </div>
@@ -347,11 +347,11 @@ function SectionContentEditor({
             }}
           />
         </label>
-        <Input
+         <Input
           value={local[key] ?? ""}
           onChange={(e) => set(key, e.target.value)}
           placeholder="Or paste URL"
-          className="border-gray-200 flex-1"
+          className="bg-white text-gray-900 border-gray-300 placeholder:text-gray-400 flex-1"
         />
       </div>
     </div>
@@ -387,7 +387,7 @@ function SectionContentEditor({
         <label className="block text-xs font-medium text-gray-500 mb-1">
           Content (JSON)
         </label>
-        <Textarea
+         <Textarea
           value={JSON.stringify(local, null, 2)}
           onChange={(e) => {
             try {
@@ -398,7 +398,7 @@ function SectionContentEditor({
               // invalid JSON, don't update
             }
           }}
-          className="border-gray-200 font-mono text-xs"
+          className="bg-white text-gray-900 border-gray-300 font-mono text-xs"
           rows={10}
         />
       </div>

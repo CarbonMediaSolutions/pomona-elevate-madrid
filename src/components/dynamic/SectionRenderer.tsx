@@ -27,10 +27,10 @@ export default function SectionRenderer({ section }: { section: SectionData }) {
     case "text-image":
       return (
         <Section>
-          <div className={`grid md:grid-cols-2 gap-12 items-center ${c.imagePosition === "left" ? "" : ""}`}>
+          <div className={`grid md:grid-cols-2 gap-12 items-center`}>
             <div className={c.imagePosition === "left" ? "md:order-2" : ""}>
-              <h2 className="font-serif text-editorial-lg mb-4">{c.heading}</h2>
-              <p className="text-body-lg text-muted-foreground whitespace-pre-line">{c.body}</p>
+              <h2 className="font-serif text-editorial-lg mb-4 text-foreground">{c.heading}</h2>
+              <p className="text-body-lg whitespace-pre-line">{c.body}</p>
             </div>
             <div className={c.imagePosition === "left" ? "md:order-1" : ""}>
               {c.image ? (
@@ -66,8 +66,8 @@ export default function SectionRenderer({ section }: { section: SectionData }) {
                 {card.image && (
                   <img src={card.image} alt={card.title || ""} className="w-full aspect-video object-cover rounded mb-4" />
                 )}
-                <h3 className="font-serif text-lg mb-2">{card.title}</h3>
-                <p className="text-sm text-muted-foreground">{card.body}</p>
+                <h3 className="font-serif text-lg mb-2 text-foreground">{card.title}</h3>
+                <p className="text-sm text-muted-foreground/80">{card.body}</p>
               </motion.div>
             ))}
           </div>
@@ -78,8 +78,8 @@ export default function SectionRenderer({ section }: { section: SectionData }) {
       return (
         <section className="py-20 px-6 bg-secondary">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-serif text-editorial-lg mb-4">{c.headline}</h2>
-            {c.body && <p className="text-body-lg text-muted-foreground mb-8">{c.body}</p>}
+            <h2 className="font-serif text-editorial-lg mb-4 text-foreground">{c.headline}</h2>
+            {c.body && <p className="text-body-lg mb-8">{c.body}</p>}
             <div className="flex flex-wrap justify-center gap-4">
               {c.cta1Text && (
                 <Button asChild size="lg">
@@ -110,10 +110,10 @@ export default function SectionRenderer({ section }: { section: SectionData }) {
                 transition={{ delay: i * 0.1 }}
                 className="card-premium p-6"
               >
-                <p className="text-foreground italic mb-4">"{item.quote}"</p>
+                <p className="text-foreground italic mb-4 leading-relaxed">"{item.quote}"</p>
                 <footer className="text-sm">
-                  <span className="font-semibold text-accent">{item.author}</span>
-                  {item.role && <span className="text-muted-foreground"> — {item.role}</span>}
+                  <span className="font-semibold gradient-text">{item.author}</span>
+                  {item.role && <span className="text-muted-foreground/80"> — {item.role}</span>}
                 </footer>
               </motion.blockquote>
             ))}

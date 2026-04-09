@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Link } from "react-router-dom";
-import { FileText, Image, Settings } from "lucide-react";
+import { FileText, Image, Settings, Plus } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import CreatePageWizard from "@/components/admin/CreatePageWizard";
 
 const AdminDashboard = () => {
+  const [wizardOpen, setWizardOpen] = useState(false);
   const { data: pages } = useQuery({
     queryKey: ["admin-pages"],
     queryFn: async () => {
@@ -22,7 +26,13 @@ const AdminDashboard = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Dashboard</h2>
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
+        <Button onClick={() => setWizardOpen(true)}>
+          <Plus className="w-4 h-4 mr-1" /> Create New Page
+        </Button>
+      </div>
+      <CreatePageWizard open={wizardOpen} onOpenChange={setWizardOpen} />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         <div className="bg-white rounded-lg border border-gray-200 p-5">
           <div className="flex items-center gap-3 mb-2">

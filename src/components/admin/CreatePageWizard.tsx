@@ -303,7 +303,7 @@ export default function CreatePageWizard({
                 <ArrowLeft className="w-4 h-4 mr-1" /> Back
               </Button>
               <Button onClick={createPage} disabled={creating || sections.length === 0} className="flex-1">
-                {creating ? <Loader2 className="w-4 h-4 animate-spin mr-1" /> : null}
+                {creating ? <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-1 inline-block" /> : null}
                 Create Page
               </Button>
             </div>

@@ -1,32 +1,32 @@
 
 
-# Add Progress Tracker to AI Page Generation Step
+# Two-Location Gym Selector (Serrano + Retiro)
 
-## Problem
-Step 3 (AI layout generation) shows only a static spinner with no sense of progress, making long waits feel indefinite.
+Same plan as before, but the second location is **Retiro** (not El Tiro). Here's the updated summary:
 
-## Solution
-Add a simulated multi-phase progress tracker that cycles through descriptive status messages with a progress bar. Since the edge function call is a single async request (no real intermediate progress), we simulate phases that give the user confidence something is happening.
+## What gets built
 
-## Progress Phases
-1. "Analyzing your description..." (0–25%)
-2. "Selecting section types..." (25–50%)
-3. "Generating content..." (50–75%)
-4. "Finalizing layout..." (75–90%)
-5. Completes to 100% when the response arrives
+### 1. Location Chooser Modal (`src/components/LocationChooserModal.tsx`)
+- Triggered by all "Book a Session" buttons (header, mobile CTA, mobile menu)
+- Two side-by-side image cards: **Serrano** and **Retiro**
+- Each card: gym photo, name, address snippet
+- Clicking navigates to `/schedule/serrano` or `/schedule/retiro`
 
-## Implementation
+### 2. Schedule page with location routing
+- Add `/schedule/:location` route in `App.tsx`
+- `Schedule.tsx` reads the param and loads the correct Glofox iframe per location
+- `/schedule` without a param redirects to the modal or shows both options
 
-### File: `src/components/admin/CreatePageWizard.tsx`
+### 3. Homepage Location Section update
+- `LocationSection.tsx` → two side-by-side cards (Serrano + Retiro) with images, name, address, and CTA
+- Replace current single-location layout
 
-- Add two state variables: `progress` (number 0–100) and `progressMessage` (string)
-- When entering step 3, start an interval timer that advances `progress` by ~12% every 2 seconds and cycles through the phase messages above, capping at 90%
-- When `generateLayout()` completes successfully, set progress to 100% briefly before advancing to step 4
-- Clear the interval on completion or error
-- Replace the current step 3 UI (just a spinner + single line) with:
-  - The current phase message (animated text)
-  - A `Progress` bar component (from shadcn/ui) showing the percentage
-  - A subtle percentage label
+### 4. Header updates
+- All "Book a Session" links (desktop, mobile menu, floating CTA) open the modal instead of linking directly to `/schedule`
 
-Uses the existing `src/components/ui/progress.tsx` component — no new dependencies.
+### 5. Assets
+- Placeholder images for both locations (can be swapped for real photos later)
+- Placeholder Glofox branch ID for Retiro
+
+No database changes required — purely frontend.
 

@@ -544,5 +544,21 @@
         }
       ]
     }
+  },
+  "locationChooser": {
+    "title": "Choose your club",
+    "subtitle": "Select a location to book your session.",
+    "serrano": "Pomona Serrano",
+    "serranoAddress": "Calle de Serrano 45, Salamanca",
+    "serranoHours": "Mon–Fri 6:30–22:00 · Sat–Sun 8:00–20:00",
+    "retiro": "Pomona Retiro",
+    "retiroAddress": "Barrio de Retiro, Madrid",
+    "retiroHours": "Coming soon",
+    "viewing": "Viewing schedule for",
+    "switchLocation": "Switch location",
+    "bookHere": "Book a session",
+    "sectionTag": "Our Locations",
+    "sectionHeadline": "Two clubs.\nOne elevated experience.",
+    "sectionBody": "Whether you train in Salamanca or Retiro, every Pomona club delivers the same premium blend of training, recovery, and community."
   }
 }

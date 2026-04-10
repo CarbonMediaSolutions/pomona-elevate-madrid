@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import LocationChooserModal from "@/components/LocationChooserModal";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [locationModalOpen, setLocationModalOpen] = useState(false);
   const location = useLocation();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +28,6 @@ const Header = () => {
       label: t("nav.club"),
       children: [
         { label: t("nav.memberships"), href: "/memberships" },
-        
         { label: t("nav.about"), href: "/about" },
       ],
     },
@@ -60,8 +61,15 @@ const Header = () => {
     i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
   };
 
+  const handleBookSession = () => {
+    setMobileOpen(false);
+    setLocationModalOpen(true);
+  };
+
   return (
     <>
+      <LocationChooserModal open={locationModalOpen} onOpenChange={setLocationModalOpen} />
+
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
@@ -132,11 +140,9 @@ const Header = () => {
               <Globe className="w-3.5 h-3.5" />
               {i18n.language === "es" ? t("lang.en") : t("lang.es")}
             </button>
-            <Link to="/schedule" className="hidden md:block">
-              <Button variant="hero" size="sm">
-                {t("nav.bookSession")}
-              </Button>
-            </Link>
+            <Button variant="hero" size="sm" className="hidden md:inline-flex" onClick={handleBookSession}>
+              {t("nav.bookSession")}
+            </Button>
             <button
               onClick={() => setMobileOpen(true)}
               className="lg:hidden text-foreground p-2"
@@ -215,11 +221,9 @@ const Header = () => {
                   <Globe className="w-4 h-4" />
                   {i18n.language === "es" ? "Switch to English" : "Cambiar a Español"}
                 </button>
-                <Link to="/schedule">
-                  <Button variant="hero" size="xl" className="w-full">
-                    {t("hero.cta1")}
-                  </Button>
-                </Link>
+                <Button variant="hero" size="xl" className="w-full" onClick={handleBookSession}>
+                  {t("hero.cta1")}
+                </Button>
               </div>
             </div>
           </motion.div>
@@ -228,11 +232,9 @@ const Header = () => {
 
       {/* Floating mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur-md border-t border-border/50 px-4 py-3.5 shadow-[0_-8px_30px_-10px_hsl(0_0%_0%/0.4)]">
-        <Link to="/schedule">
-          <Button variant="hero" size="lg" className="w-full text-sm font-semibold tracking-wide">
-            {t("nav.bookSession")}
-          </Button>
-        </Link>
+        <Button variant="hero" size="lg" className="w-full text-sm font-semibold tracking-wide" onClick={handleBookSession}>
+          {t("nav.bookSession")}
+        </Button>
       </div>
     </>
   );

@@ -1,63 +1,82 @@
 import Section from "@/components/layout/Section";
-import { MapPin, Clock, Car } from "lucide-react";
+import { MapPin, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { useCmsSection } from "@/hooks/useCmsContent";
-import { useSiteSettings } from "@/hooks/usePageContent";
+import gymSerranoImg from "@/assets/gym-serrano.jpg";
+import gymRetiroImg from "@/assets/gym-retiro.jpg";
+
+const locations = [
+  {
+    key: "serrano",
+    image: gymSerranoImg,
+    href: "/schedule/serrano",
+  },
+  {
+    key: "retiro",
+    image: gymRetiroImg,
+    href: "/schedule/retiro",
+  },
+];
 
 const LocationSection = () => {
   const { t } = useTranslation();
   const cms = useCmsSection("home", "location");
-  const { data: settings } = useSiteSettings();
 
-  const tag = (cms?.tag as string) || t("location.tag");
-  const headline = (cms?.headline as string) || t("location.headline");
-  const body = (cms?.body as string) || t("location.body");
-  const address = (cms?.address as string) || settings?.address || "Calle de Serrano 45, 28001 Madrid";
-  const monFri = (cms?.monFri as string) || settings?.hours_weekday || t("location.monFri");
-  const satSun = (cms?.satSun as string) || settings?.hours_weekend || t("location.satSun");
-  const metro = (cms?.metro as string) || t("location.metro");
-  const parking = (cms?.parking as string) || t("location.parking");
-  const planVisit = (cms?.planVisit as string) || t("location.planVisit");
+  const tag = (cms?.tag as string) || t("locationChooser.sectionTag");
+  const headline = (cms?.headline as string) || t("locationChooser.sectionHeadline");
+  const body = (cms?.body as string) || t("locationChooser.sectionBody");
 
   return (
     <Section className="bg-secondary/30">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <span className="pill-tag mb-6 inline-block">{tag}</span>
-          <h2 className="text-editorial-lg text-foreground whitespace-pre-line">{headline}</h2>
-          <p className="text-body-lg mt-6">{body}</p>
-          <div className="flex flex-col gap-4 mt-8">
-            <div className="flex items-start gap-3 text-secondary-foreground">
-              <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-              <div>
-                <div className="font-medium text-foreground">{address}</div>
-                <div className="text-sm text-muted-foreground">{t("location.salamanca")}</div>
+      <div className="text-center max-w-2xl mx-auto mb-12">
+        <span className="pill-tag mb-6 inline-block">{tag}</span>
+        <h2 className="text-editorial-lg text-foreground whitespace-pre-line">{headline}</h2>
+        <p className="text-body-lg mt-6">{body}</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {locations.map((loc) => (
+          <Link
+            key={loc.key}
+            to={loc.href}
+            className="group relative overflow-hidden rounded-xl aspect-[4/5] block"
+          >
+            <img
+              src={loc.image}
+              alt={t(`locationChooser.${loc.key}`)}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+              width={800}
+              height={1024}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8">
+              <h3 className="font-serif text-2xl text-white mb-1">
+                {t(`locationChooser.${loc.key}`)}
+              </h3>
+              <div className="flex items-center gap-2 text-white/70 text-sm mb-1">
+                <MapPin className="w-3.5 h-3.5" />
+                {t(`locationChooser.${loc.key}Address`)}
               </div>
-            </div>
-            <div className="flex items-start gap-3 text-secondary-foreground">
-              <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-              <div>
-                <div className="font-medium text-foreground">{monFri}</div>
-                <div className="text-sm text-muted-foreground">{satSun}</div>
+              <div className="flex items-center gap-2 text-white/70 text-sm mb-4">
+                <Clock className="w-3.5 h-3.5" />
+                {t(`locationChooser.${loc.key}Hours`)}
               </div>
+              <span className="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:gap-3 transition-all">
+                {t("locationChooser.bookHere")}
+                <ArrowRight className="w-4 h-4" />
+              </span>
             </div>
-            <div className="flex items-start gap-3 text-secondary-foreground">
-              <Car className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-              <div>
-                <div className="font-medium text-foreground">{metro}</div>
-                <div className="text-sm text-muted-foreground">{parking}</div>
-              </div>
-            </div>
-          </div>
-          <Link to="/contact" className="mt-8 inline-block">
-            <Button variant="hero" size="lg">{planVisit}</Button>
           </Link>
-        </div>
-        <div className="relative rounded-lg overflow-hidden aspect-[4/3] bg-muted">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3!2d-3.685!3d40.428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzQxLjAiTiAzwrA0MScwNi4wIlc!5e0!3m2!1sen!2ses!4v1" width="100%" height="100%" style={{ border: 0, filter: "saturate(0.6) brightness(0.8) contrast(1.1)" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Pomona Club location on map" />
-        </div>
+        ))}
+      </div>
+
+      <div className="text-center mt-10">
+        <Link to="/contact">
+          <Button variant="outline" size="lg">{t("location.planVisit")}</Button>
+        </Link>
       </div>
     </Section>
   );
